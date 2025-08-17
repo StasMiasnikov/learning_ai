@@ -1,0 +1,222 @@
+/* Custom styles for LLM and MCP Learning Module */
+
+/* Enhanced code block styling */
+.highlight {
+    border-radius: 6px;
+    border-left: 4px solid var(--md-accent-fg-color);
+}
+
+/* Mermaid diagram styling */
+.mermaid {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Admonition enhancements */
+.md-typeset .admonition {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Progress indicators for learning path */
+.progress-indicator {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: rgba(var(--md-primary-fg-color--rgb), 0.1);
+}
+
+.progress-indicator::before {
+    content: "📈";
+    margin-right: 0.5rem;
+}
+
+/* Exercise blocks */
+.exercise {
+    background: rgba(var(--md-accent-fg-color--rgb), 0.1);
+    border: 1px solid var(--md-accent-fg-color);
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.exercise h4 {
+    margin-top: 0;
+    color: var(--md-accent-fg-color);
+}
+
+/* Knowledge check styling */
+.knowledge-check {
+    background: rgba(76, 175, 80, 0.1);
+    border-left: 4px solid #4caf50;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Resource links styling */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.resource-card {
+    border: 1px solid var(--md-default-fg-color--lighter);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: box-shadow 0.2s;
+}
+
+.resource-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Learning objective styling */
+.learning-objectives {
+    background: rgba(33, 150, 243, 0.1);
+    border-left: 4px solid #2196f3;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.learning-objectives h4 {
+    color: #2196f3;
+    margin-top: 0;
+}
+
+/* Timeline styling for learning path */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--md-primary-fg-color);
+    opacity: 0.3;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.75rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--md-primary-fg-color);
+}
+
+/* Highlight boxes for key concepts */
+.concept-highlight {
+    background: linear-gradient(135deg, rgba(var(--md-primary-fg-color--rgb), 0.1), rgba(var(--md-accent-fg-color--rgb), 0.1));
+    border: 1px solid var(--md-primary-fg-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.concept-highlight::before {
+    content: "💡";
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+    background: var(--md-default-bg-color);
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Code example enhancements */
+.code-example {
+    margin: 1rem 0;
+}
+
+.code-example .md-typeset pre {
+    margin: 0;
+}
+
+.code-example::before {
+    content: "Code Example";
+    display: block;
+    background: var(--md-code-bg-color);
+    color: var(--md-code-fg-color);
+    padding: 0.5rem 1rem;
+    margin: 0;
+    font-weight: bold;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Quick reference boxes */
+.quick-ref {
+    border: 2px dashed var(--md-accent-fg-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: rgba(var(--md-accent-fg-color--rgb), 0.05);
+}
+
+.quick-ref h4 {
+    margin-top: 0;
+    color: var(--md-accent-fg-color);
+}
+
+/* Navigation enhancements */
+.md-nav__item--active > .md-nav__link {
+    font-weight: bold;
+    color: var(--md-primary-fg-color);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 76.1875em) {
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline {
+        padding-left: 1rem;
+    }
+    
+    .timeline::before {
+        left: 0.5rem;
+    }
+    
+    .timeline-item::before {
+        left: -1.25rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .md-header,
+    .md-sidebar,
+    .md-footer {
+        display: none;
+    }
+    
+    .md-content {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .highlight {
+        break-inside: avoid;
+    }
+}

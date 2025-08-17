@@ -1,0 +1,129 @@
+site_name: LLM and Multi-Agent Collaboration Platforms - Learning Path
+site_description: A comprehensive learning module for understanding, building, securing, and measuring Large Language Model agents and Multi-Agent Collaboration Platforms
+site_author: Learning Path Contributors
+site_url: https://example.com
+
+# Repository
+repo_name: LLM-MCP-Learning-Path
+repo_url: https://github.com/example/llm-mcp-learning-path
+
+# Configuration
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# Plugins
+plugins:
+  - search
+  - mermaid2
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# Navigation
+nav:
+  - Home: index.md
+  - Introduction:
+      - Overview: introduction/overview.md
+      - Applications: introduction/applications.md
+      - Prerequisites: introduction/prerequisites.md
+  - Foundational Knowledge:
+      - AI/ML Fundamentals: foundations/ai-ml-fundamentals.md
+      - Mathematics for AI: foundations/mathematics.md
+      - Programming Essentials: foundations/programming.md
+      - Deep Learning Basics: foundations/deep-learning.md
+  - Understanding LLMs:
+      - LLM Architecture: llms/architecture.md
+      - Training Process: llms/training.md
+      - Fine-tuning & Adaptation: llms/fine-tuning.md
+      - Prompt Engineering: llms/prompt-engineering.md
+      - Model Evaluation: llms/evaluation.md
+  - Building LLM Agents:
+      - Agent Architecture: agents/architecture.md
+      - Planning & Reasoning: agents/planning.md
+      - Tool Integration: agents/tools.md
+      - Memory Systems: agents/memory.md
+      - Deployment Strategies: agents/deployment.md
+  - Security & Safety:
+      - Security Fundamentals: security/fundamentals.md
+      - Common Vulnerabilities: security/vulnerabilities.md
+      - Safety Alignment: security/alignment.md
+      - Monitoring & Detection: security/monitoring.md
+  - Performance Measurement:
+      - Evaluation Metrics: performance/metrics.md
+      - Benchmarking: performance/benchmarking.md
+      - Monitoring Systems: performance/monitoring.md
+      - Optimization Techniques: performance/optimization.md
+  - Multi-Agent Platforms:
+      - MCP Fundamentals: mcp/fundamentals.md
+      - Agent Communication: mcp/communication.md
+      - Coordination Strategies: mcp/coordination.md
+      - Frameworks & Tools: mcp/frameworks.md
+      - Scaling Considerations: mcp/scaling.md
+  - Resources:
+      - Learning Resources: resources/learning.md
+      - Tools & Libraries: resources/tools.md
+      - Communities: resources/communities.md
+      - Staying Updated: resources/updates.md
+  - Capstone Project:
+      - Project Overview: capstone/overview.md
+      - Planning Phase: capstone/planning.md
+      - Implementation: capstone/implementation.md
+      - Evaluation: capstone/evaluation.md
+      - Documentation: capstone/documentation.md
+
+# Extra CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Extra JavaScript
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Copyright
+copyright: Copyright &copy; 2024 LLM-MCP Learning Path Contributors
