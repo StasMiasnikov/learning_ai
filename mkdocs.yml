@@ -103,6 +103,16 @@ nav:
       - Coordination Strategies: mcp/coordination.md
       - Frameworks & Tools: mcp/frameworks.md
       - Scaling Considerations: mcp/scaling.md
+  - MCP-LLM Connectivity Patterns:
+      - Overview: mcp-llm-connectivity/index.md
+      - Basic Communication Flow: mcp-llm-connectivity/basic-flow.md
+      - Tool Integration: mcp-llm-connectivity/tool-integration.md
+      - Multi-Agent Systems: mcp-llm-connectivity/multi-agent.md
+      - Enterprise Architecture: mcp-llm-connectivity/enterprise-architecture.md
+      - Real-Time Streaming: mcp-llm-connectivity/real-time-streaming.md
+      - Security Patterns: mcp-llm-connectivity/security-patterns.md
+      - Scaling Patterns: mcp-llm-connectivity/scaling-patterns.md
+      - Data Flow Patterns: mcp-llm-connectivity/data-flow.md
   - Resources:
       - Learning Resources: resources/learning.md
       - Tools & Libraries: resources/tools.md
