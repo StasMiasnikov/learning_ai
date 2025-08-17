@@ -61,6 +61,42 @@
          <lastmod>2025-08-17</lastmod>
     </url>
     <url>
+         <loc>https://example.com/mcp-llm-connectivity/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/mcp-llm-connectivity/basic-flow/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/mcp-llm-connectivity/data-flow/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/mcp-llm-connectivity/enterprise-architecture/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/mcp-llm-connectivity/multi-agent/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/mcp-llm-connectivity/real-time-streaming/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/mcp-llm-connectivity/scaling-patterns/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/mcp-llm-connectivity/security-patterns/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/mcp-llm-connectivity/tool-integration/</loc>
+         <lastmod>2025-08-17</lastmod>
+    </url>
+    <url>
          <loc>https://example.com/performance/metrics/</loc>
          <lastmod>2025-08-17</lastmod>
     </url>
