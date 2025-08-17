@@ -1,0 +1,1794 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="A comprehensive learning module for understanding, building, securing, and measuring Large Language Model agents and Multi-Agent Collaboration Platforms" name="description"/>
+<meta content="Learning Path Contributors" name="author"/>
+<link href="https://example.com/capstone/overview/" rel="canonical"/>
+<link href="../../resources/learning/" rel="prev"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.17" name="generator"/>
+<title>Project Overview - LLM and Multi-Agent Collaboration Platforms - Learning Path</title>
+<link href="../../assets/stylesheets/main.7e37652d.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#capstone-project-intelligent-multi-agent-research-assistant">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="LLM and Multi-Agent Collaboration Platforms - Learning Path" class="md-header__button md-logo" data-md-component="logo" href="../.." title="LLM and Multi-Agent Collaboration Platforms - Learning Path">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            LLM and Multi-Agent Collaboration Platforms - Learning Path
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Project Overview
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/example/llm-mcp-learning-path" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4" fill="currentColor"></path></svg>
+</div>
+<div class="md-source__repository">
+    LLM-MCP-Learning-Path
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../introduction/overview/">
+          
+  
+  
+  Introduction
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../foundations/ai-ml-fundamentals/">
+          
+  
+  
+  Foundational Knowledge
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../llms/architecture/">
+          
+  
+  
+  Understanding LLMs
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../agents/architecture/">
+          
+  
+  
+  Building LLM Agents
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../security/fundamentals/">
+          
+  
+  
+  Security &amp; Safety
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../performance/metrics/">
+          
+  
+  
+  Performance Measurement
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../mcp/fundamentals/">
+          
+  
+  
+  Multi-Agent Platforms
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../resources/learning/">
+          
+  
+  
+  Resources
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="./">
+          
+  
+  
+  Capstone Project
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="LLM and Multi-Agent Collaboration Platforms - Learning Path" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="LLM and Multi-Agent Collaboration Platforms - Learning Path">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    LLM and Multi-Agent Collaboration Platforms - Learning Path
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/example/llm-mcp-learning-path" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4" fill="currentColor"></path></svg>
+</div>
+<div class="md-source__repository">
+    LLM-MCP-Learning-Path
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Home
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../introduction/overview/">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../introduction/applications/">
+<span class="md-ellipsis">
+    Applications
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../introduction/prerequisites/">
+<span class="md-ellipsis">
+    Prerequisites
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Foundational Knowledge
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Foundational Knowledge
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../foundations/ai-ml-fundamentals/">
+<span class="md-ellipsis">
+    AI/ML Fundamentals
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../foundations/mathematics/">
+<span class="md-ellipsis">
+    Mathematics for AI
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../foundations/programming/">
+<span class="md-ellipsis">
+    Programming Essentials
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../foundations/deep-learning/">
+<span class="md-ellipsis">
+    Deep Learning Basics
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Understanding LLMs
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Understanding LLMs
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../llms/architecture/">
+<span class="md-ellipsis">
+    LLM Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../llms/training/">
+<span class="md-ellipsis">
+    Training Process
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../llms/fine-tuning/">
+<span class="md-ellipsis">
+    Fine-tuning &amp; Adaptation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../llms/prompt-engineering/">
+<span class="md-ellipsis">
+    Prompt Engineering
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../llms/evaluation.md">
+<span class="md-ellipsis">
+    Model Evaluation
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Building LLM Agents
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Building LLM Agents
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../agents/architecture/">
+<span class="md-ellipsis">
+    Agent Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../agents/planning.md">
+<span class="md-ellipsis">
+    Planning &amp; Reasoning
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../agents/tools.md">
+<span class="md-ellipsis">
+    Tool Integration
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../agents/memory.md">
+<span class="md-ellipsis">
+    Memory Systems
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../agents/deployment.md">
+<span class="md-ellipsis">
+    Deployment Strategies
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Security &amp; Safety
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            Security &amp; Safety
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../security/fundamentals/">
+<span class="md-ellipsis">
+    Security Fundamentals
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../security/vulnerabilities.md">
+<span class="md-ellipsis">
+    Common Vulnerabilities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../security/alignment.md">
+<span class="md-ellipsis">
+    Safety Alignment
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../security/monitoring.md">
+<span class="md-ellipsis">
+    Monitoring &amp; Detection
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Performance Measurement
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            Performance Measurement
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../performance/metrics/">
+<span class="md-ellipsis">
+    Evaluation Metrics
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../performance/benchmarking.md">
+<span class="md-ellipsis">
+    Benchmarking
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../performance/monitoring.md">
+<span class="md-ellipsis">
+    Monitoring Systems
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../performance/optimization.md">
+<span class="md-ellipsis">
+    Optimization Techniques
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<span class="md-ellipsis">
+    Multi-Agent Platforms
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            Multi-Agent Platforms
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../mcp/fundamentals/">
+<span class="md-ellipsis">
+    MCP Fundamentals
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../mcp/communication.md">
+<span class="md-ellipsis">
+    Agent Communication
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../mcp/coordination.md">
+<span class="md-ellipsis">
+    Coordination Strategies
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../mcp/frameworks.md">
+<span class="md-ellipsis">
+    Frameworks &amp; Tools
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../mcp/scaling.md">
+<span class="md-ellipsis">
+    Scaling Considerations
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+<span class="md-ellipsis">
+    Resources
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../resources/learning/">
+<span class="md-ellipsis">
+    Learning Resources
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../resources/tools.md">
+<span class="md-ellipsis">
+    Tools &amp; Libraries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../resources/communities.md">
+<span class="md-ellipsis">
+    Communities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../resources/updates.md">
+<span class="md-ellipsis">
+    Staying Updated
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+<span class="md-ellipsis">
+    Capstone Project
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            Capstone Project
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-overview">
+<span class="md-ellipsis">
+      🎯 Project Overview
+    </span>
+</a>
+<nav aria-label="🎯 Project Overview" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system-architecture">
+<span class="md-ellipsis">
+      System Architecture
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#core-components">
+<span class="md-ellipsis">
+      Core Components
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-requirements">
+<span class="md-ellipsis">
+      📋 Project Requirements
+    </span>
+</a>
+<nav aria-label="📋 Project Requirements" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#functional-requirements">
+<span class="md-ellipsis">
+      Functional Requirements
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#technical-requirements">
+<span class="md-ellipsis">
+      Technical Requirements
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-guide">
+<span class="md-ellipsis">
+      🏗️ Implementation Guide
+    </span>
+</a>
+<nav aria-label="🏗️ Implementation Guide" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-1-foundation-setup-week-1-2">
+<span class="md-ellipsis">
+      Phase 1: Foundation Setup (Week 1-2)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-2-base-agent-framework-week-2-3">
+<span class="md-ellipsis">
+      Phase 2: Base Agent Framework (Week 2-3)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-3-specialized-agents-week-3-4">
+<span class="md-ellipsis">
+      Phase 3: Specialized Agents (Week 3-4)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-4-integration-and-api-week-4-5">
+<span class="md-ellipsis">
+      Phase 4: Integration and API (Week 4-5)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#success-criteria">
+<span class="md-ellipsis">
+      ✅ Success Criteria
+    </span>
+</a>
+<nav aria-label="✅ Success Criteria" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#technical-metrics">
+<span class="md-ellipsis">
+      Technical Metrics
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quality-metrics">
+<span class="md-ellipsis">
+      Quality Metrics
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-experience">
+<span class="md-ellipsis">
+      User Experience
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../planning.md">
+<span class="md-ellipsis">
+    Planning Phase
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../implementation.md">
+<span class="md-ellipsis">
+    Implementation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../evaluation.md">
+<span class="md-ellipsis">
+    Evaluation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../documentation.md">
+<span class="md-ellipsis">
+    Documentation
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-overview">
+<span class="md-ellipsis">
+      🎯 Project Overview
+    </span>
+</a>
+<nav aria-label="🎯 Project Overview" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system-architecture">
+<span class="md-ellipsis">
+      System Architecture
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#core-components">
+<span class="md-ellipsis">
+      Core Components
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-requirements">
+<span class="md-ellipsis">
+      📋 Project Requirements
+    </span>
+</a>
+<nav aria-label="📋 Project Requirements" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#functional-requirements">
+<span class="md-ellipsis">
+      Functional Requirements
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#technical-requirements">
+<span class="md-ellipsis">
+      Technical Requirements
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-guide">
+<span class="md-ellipsis">
+      🏗️ Implementation Guide
+    </span>
+</a>
+<nav aria-label="🏗️ Implementation Guide" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-1-foundation-setup-week-1-2">
+<span class="md-ellipsis">
+      Phase 1: Foundation Setup (Week 1-2)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-2-base-agent-framework-week-2-3">
+<span class="md-ellipsis">
+      Phase 2: Base Agent Framework (Week 2-3)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-3-specialized-agents-week-3-4">
+<span class="md-ellipsis">
+      Phase 3: Specialized Agents (Week 3-4)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#phase-4-integration-and-api-week-4-5">
+<span class="md-ellipsis">
+      Phase 4: Integration and API (Week 4-5)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#success-criteria">
+<span class="md-ellipsis">
+      ✅ Success Criteria
+    </span>
+</a>
+<nav aria-label="✅ Success Criteria" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#technical-metrics">
+<span class="md-ellipsis">
+      Technical Metrics
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quality-metrics">
+<span class="md-ellipsis">
+      Quality Metrics
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-experience">
+<span class="md-ellipsis">
+      User Experience
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="capstone-project-intelligent-multi-agent-research-assistant">Capstone Project: Intelligent Multi-Agent Research Assistant</h1>
+<p>This capstone project integrates all concepts learned throughout the course by building a sophisticated multi-agent system that can conduct comprehensive research, analyze information, and generate detailed reports on complex topics.</p>
+<h2 id="project-overview">🎯 Project Overview</h2>
+<h3 id="system-architecture">System Architecture</h3>
+<pre class="mermaid"><code>graph TB
+    A[User Query] --&gt; B[Query Analyzer Agent]
+    B --&gt; C[Research Coordinator]
+    C --&gt; D[Web Search Agent]
+    C --&gt; E[Academic Paper Agent]  
+    C --&gt; F[Data Analysis Agent]
+    D --&gt; G[Information Synthesizer]
+    E --&gt; G
+    F --&gt; G
+    G --&gt; H[Report Generator Agent]
+    H --&gt; I[Quality Reviewer Agent]
+    I --&gt; J[Final Report]
+
+    K[Memory System] --&gt; C
+    K --&gt; G
+    K --&gt; H
+
+    L[Tool Registry] --&gt; D
+    L --&gt; E
+    L --&gt; F</code></pre>
+<h3 id="core-components">Core Components</h3>
+<ol>
+<li><strong>Query Analyzer Agent</strong>: Understands and decomposes research queries</li>
+<li><strong>Research Coordinator</strong>: Plans and orchestrates the research process</li>
+<li><strong>Information Gathering Agents</strong>: Web search, academic papers, data collection</li>
+<li><strong>Synthesis Agent</strong>: Combines information from multiple sources</li>
+<li><strong>Report Generator</strong>: Creates comprehensive research reports</li>
+<li><strong>Quality Reviewer</strong>: Ensures accuracy and completeness</li>
+</ol>
+<h2 id="project-requirements">📋 Project Requirements</h2>
+<h3 id="functional-requirements">Functional Requirements</h3>
+<p><strong>Primary Features</strong>:
+- Natural language query processing
+- Multi-source information gathering
+- Intelligent agent coordination
+- Comprehensive report generation
+- Citation and source tracking
+- Quality assurance and fact-checking</p>
+<p><strong>Agent Capabilities</strong>:
+- Web search and content extraction
+- Academic paper analysis
+- Data visualization creation
+- Multi-language support
+- Real-time collaboration</p>
+<p><strong>System Features</strong>:
+- Persistent memory across sessions
+- Configurable research depth
+- Export in multiple formats (PDF, HTML, Markdown)
+- Interactive query refinement
+- Progress tracking and status updates</p>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<p><strong>Architecture</strong>:
+- Microservices-based agent system
+- RESTful API interfaces
+- Message queue for agent communication
+- Vector database for knowledge storage
+- LLM integration for reasoning</p>
+<p><strong>Performance</strong>:
+- Handle queries within 2-5 minutes
+- Support concurrent research sessions
+- Scale to 10+ simultaneous users
+- 99.9% uptime availability</p>
+<p><strong>Security</strong>:
+- API key management
+- Rate limiting and quotas
+- Data privacy and compliance
+- Secure communication between agents</p>
+<h2 id="implementation-guide">🏗️ Implementation Guide</h2>
+<h3 id="phase-1-foundation-setup-week-1-2">Phase 1: Foundation Setup (Week 1-2)</h3>
+<p><strong>Environment Preparation</strong>:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Project structure</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="n">research</span><span class="o">-</span><span class="n">assistant</span><span class="o">/</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="err">├──</span> <span class="n">agents</span><span class="o">/</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="err">│</span>   <span class="err">├──</span> <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">base_agent</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">query_analyzer</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">research_coordinator</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">web_search_agent</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">academic_agent</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">synthesis_agent</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="err">│</span>   <span class="err">└──</span> <span class="n">report_generator</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="err">├──</span> <span class="n">tools</span><span class="o">/</span>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="err">│</span>   <span class="err">├──</span> <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">web_scraper</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">paper_finder</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">citation_tracker</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="err">│</span>   <span class="err">└──</span> <span class="n">data_visualizer</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="err">├──</span> <span class="n">memory</span><span class="o">/</span>
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="err">│</span>   <span class="err">├──</span> <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">vector_store</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">graph_memory</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="err">│</span>   <span class="err">└──</span> <span class="n">session_manager</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="err">├──</span> <span class="n">api</span><span class="o">/</span>
+<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="err">│</span>   <span class="err">├──</span> <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">routes</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-27" id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="err">│</span>   <span class="err">└──</span> <span class="n">models</span><span class="o">.</span><span class="n">py</span>
+<a href="#__codelineno-0-28" id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="err">├──</span> <span class="n">frontend</span><span class="o">/</span>
+<a href="#__codelineno-0-29" id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+<a href="#__codelineno-0-30" id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="err">│</span>   <span class="err">├──</span> <span class="n">app</span><span class="o">.</span><span class="n">js</span>
+<a href="#__codelineno-0-31" id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="err">│</span>   <span class="err">└──</span> <span class="n">style</span><span class="o">.</span><span class="n">css</span>
+<a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="err">├──</span> <span class="n">tests</span><span class="o">/</span>
+<a href="#__codelineno-0-33" id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="err">├──</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+<a href="#__codelineno-0-34" id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="err">├──</span> <span class="n">docker</span><span class="o">-</span><span class="n">compose</span><span class="o">.</span><span class="n">yml</span>
+<a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="err">└──</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+</code></pre></div></p>
+<p><strong>Core Dependencies</strong>:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># requirements.txt</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">fastapi</span><span class="o">==</span><span class="mf">0.104.1</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">uvicorn</span><span class="o">==</span><span class="mf">0.24.0</span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">langchain</span><span class="o">==</span><span class="mf">0.1.0</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="n">chromadb</span><span class="o">==</span><span class="mf">0.4.15</span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="n">numpy</span><span class="o">==</span><span class="mf">1.24.3</span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="n">pandas</span><span class="o">==</span><span class="mf">2.0.3</span>
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="n">aiohttp</span><span class="o">==</span><span class="mf">3.9.0</span>
+<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="n">beautifulsoup4</span><span class="o">==</span><span class="mf">4.12.2</span>
+<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="n">python</span><span class="o">-</span><span class="n">multipart</span><span class="o">==</span><span class="mf">0.0.6</span>
+<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="n">python</span><span class="o">-</span><span class="n">dotenv</span><span class="o">==</span><span class="mf">1.0.0</span>
+<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="n">openai</span><span class="o">==</span><span class="mf">1.3.0</span>
+<a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="n">anthropic</span><span class="o">==</span><span class="mf">0.3.0</span>
+<a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="n">tiktoken</span><span class="o">==</span><span class="mf">0.5.0</span>
+<a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="n">sqlalchemy</span><span class="o">==</span><span class="mf">2.0.23</span>
+<a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="n">alembic</span><span class="o">==</span><span class="mf">1.13.0</span>
+<a href="#__codelineno-1-17" id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="n">redis</span><span class="o">==</span><span class="mf">5.0.1</span>
+<a href="#__codelineno-1-18" id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="n">celery</span><span class="o">==</span><span class="mf">5.3.4</span>
+<a href="#__codelineno-1-19" id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="n">pytest</span><span class="o">==</span><span class="mf">7.4.3</span>
+<a href="#__codelineno-1-20" id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="n">pytest</span><span class="o">-</span><span class="n">asyncio</span><span class="o">==</span><span class="mf">0.21.1</span>
+<a href="#__codelineno-1-21" id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="n">streamlit</span><span class="o">==</span><span class="mf">1.28.0</span>  <span class="c1"># For web interface</span>
+<a href="#__codelineno-1-22" id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="n">plotly</span><span class="o">==</span><span class="mf">5.17.0</span>     <span class="c1"># For visualizations</span>
+<a href="#__codelineno-1-23" id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="n">reportlab</span><span class="o">==</span><span class="mf">4.0.7</span>   <span class="c1"># For PDF generation</span>
+</code></pre></div></p>
+<h3 id="phase-2-base-agent-framework-week-2-3">Phase 2: Base Agent Framework (Week 2-3)</h3>
+<p><strong>Base Agent Class</strong>:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">abc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Optional</span>
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span>
+<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a>
+<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="k">class</span><span class="w"> </span><span class="nc">BaseAgent</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+<a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">    </span><span class="sd">"""Abstract base class for all research assistant agents"""</span>
+<a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a>
+<a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">capabilities</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">llm_client</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span>
+<a href="#__codelineno-2-13" id="__codelineno-2-13" name="__codelineno-2-13"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+<a href="#__codelineno-2-14" id="__codelineno-2-14" name="__codelineno-2-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">capabilities</span> <span class="o">=</span> <span class="n">capabilities</span>
+<a href="#__codelineno-2-15" id="__codelineno-2-15" name="__codelineno-2-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">llm_client</span> <span class="o">=</span> <span class="n">llm_client</span>
+<a href="#__codelineno-2-16" id="__codelineno-2-16" name="__codelineno-2-16"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="s2">"initialized"</span>
+<a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">memory</span> <span class="o">=</span> <span class="p">{}</span>
+<a href="#__codelineno-2-18" id="__codelineno-2-18" name="__codelineno-2-18"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tools</span> <span class="o">=</span> <span class="p">{}</span>
+<a href="#__codelineno-2-19" id="__codelineno-2-19" name="__codelineno-2-19"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">created_at</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<a href="#__codelineno-2-20" id="__codelineno-2-20" name="__codelineno-2-20"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="sa">f</span><span class="s2">"agent.</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a href="#__codelineno-2-21" id="__codelineno-2-21" name="__codelineno-2-21"></a>
+<a href="#__codelineno-2-22" id="__codelineno-2-22" name="__codelineno-2-22"></a>    <span class="nd">@abstractmethod</span>
+<a href="#__codelineno-2-23" id="__codelineno-2-23" name="__codelineno-2-23"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">process_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<a href="#__codelineno-2-24" id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="w">        </span><span class="sd">"""Process incoming message and return response"""</span>
+<a href="#__codelineno-2-25" id="__codelineno-2-25" name="__codelineno-2-25"></a>        <span class="k">pass</span>
+<a href="#__codelineno-2-26" id="__codelineno-2-26" name="__codelineno-2-26"></a>
+<a href="#__codelineno-2-27" id="__codelineno-2-27" name="__codelineno-2-27"></a>    <span class="nd">@abstractmethod</span>
+<a href="#__codelineno-2-28" id="__codelineno-2-28" name="__codelineno-2-28"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_capabilities</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<a href="#__codelineno-2-29" id="__codelineno-2-29" name="__codelineno-2-29"></a><span class="w">        </span><span class="sd">"""Return list of agent capabilities"""</span>
+<a href="#__codelineno-2-30" id="__codelineno-2-30" name="__codelineno-2-30"></a>        <span class="k">pass</span>
+<a href="#__codelineno-2-31" id="__codelineno-2-31" name="__codelineno-2-31"></a>
+<a href="#__codelineno-2-32" id="__codelineno-2-32" name="__codelineno-2-32"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">initialize</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a href="#__codelineno-2-33" id="__codelineno-2-33" name="__codelineno-2-33"></a><span class="w">        </span><span class="sd">"""Initialize agent resources"""</span>
+<a href="#__codelineno-2-34" id="__codelineno-2-34" name="__codelineno-2-34"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="s2">"ready"</span>
+<a href="#__codelineno-2-35" id="__codelineno-2-35" name="__codelineno-2-35"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Agent </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> initialized"</span><span class="p">)</span>
+<a href="#__codelineno-2-36" id="__codelineno-2-36" name="__codelineno-2-36"></a>
+<a href="#__codelineno-2-37" id="__codelineno-2-37" name="__codelineno-2-37"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">cleanup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a href="#__codelineno-2-38" id="__codelineno-2-38" name="__codelineno-2-38"></a><span class="w">        </span><span class="sd">"""Cleanup agent resources"""</span>
+<a href="#__codelineno-2-39" id="__codelineno-2-39" name="__codelineno-2-39"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="s2">"stopped"</span>
+<a href="#__codelineno-2-40" id="__codelineno-2-40" name="__codelineno-2-40"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Agent </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> cleaned up"</span><span class="p">)</span>
+<a href="#__codelineno-2-41" id="__codelineno-2-41" name="__codelineno-2-41"></a>
+<a href="#__codelineno-2-42" id="__codelineno-2-42" name="__codelineno-2-42"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">add_tool</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">tool</span><span class="p">:</span> <span class="n">Any</span><span class="p">):</span>
+<a href="#__codelineno-2-43" id="__codelineno-2-43" name="__codelineno-2-43"></a><span class="w">        </span><span class="sd">"""Add tool to agent toolkit"""</span>
+<a href="#__codelineno-2-44" id="__codelineno-2-44" name="__codelineno-2-44"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tools</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">tool</span>
+<a href="#__codelineno-2-45" id="__codelineno-2-45" name="__codelineno-2-45"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Added tool '</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">' to agent </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a href="#__codelineno-2-46" id="__codelineno-2-46" name="__codelineno-2-46"></a>
+<a href="#__codelineno-2-47" id="__codelineno-2-47" name="__codelineno-2-47"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_status</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<a href="#__codelineno-2-48" id="__codelineno-2-48" name="__codelineno-2-48"></a><span class="w">        </span><span class="sd">"""Get current agent status"""</span>
+<a href="#__codelineno-2-49" id="__codelineno-2-49" name="__codelineno-2-49"></a>        <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-2-50" id="__codelineno-2-50" name="__codelineno-2-50"></a>            <span class="s2">"id"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+<a href="#__codelineno-2-51" id="__codelineno-2-51" name="__codelineno-2-51"></a>            <span class="s2">"name"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+<a href="#__codelineno-2-52" id="__codelineno-2-52" name="__codelineno-2-52"></a>            <span class="s2">"status"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="p">,</span>
+<a href="#__codelineno-2-53" id="__codelineno-2-53" name="__codelineno-2-53"></a>            <span class="s2">"capabilities"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">capabilities</span><span class="p">,</span>
+<a href="#__codelineno-2-54" id="__codelineno-2-54" name="__codelineno-2-54"></a>            <span class="s2">"tools"</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">keys</span><span class="p">()),</span>
+<a href="#__codelineno-2-55" id="__codelineno-2-55" name="__codelineno-2-55"></a>            <span class="s2">"created_at"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">created_at</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(),</span>
+<a href="#__codelineno-2-56" id="__codelineno-2-56" name="__codelineno-2-56"></a>            <span class="s2">"memory_items"</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">memory</span><span class="p">)</span>
+<a href="#__codelineno-2-57" id="__codelineno-2-57" name="__codelineno-2-57"></a>        <span class="p">}</span>
+<a href="#__codelineno-2-58" id="__codelineno-2-58" name="__codelineno-2-58"></a>
+<a href="#__codelineno-2-59" id="__codelineno-2-59" name="__codelineno-2-59"></a><span class="k">class</span><span class="w"> </span><span class="nc">ResearchCoordinator</span><span class="p">(</span><span class="n">BaseAgent</span><span class="p">):</span>
+<a href="#__codelineno-2-60" id="__codelineno-2-60" name="__codelineno-2-60"></a><span class="w">    </span><span class="sd">"""Coordinates multi-agent research process"""</span>
+<a href="#__codelineno-2-61" id="__codelineno-2-61" name="__codelineno-2-61"></a>
+<a href="#__codelineno-2-62" id="__codelineno-2-62" name="__codelineno-2-62"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llm_client</span><span class="p">):</span>
+<a href="#__codelineno-2-63" id="__codelineno-2-63" name="__codelineno-2-63"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+<a href="#__codelineno-2-64" id="__codelineno-2-64" name="__codelineno-2-64"></a>            <span class="n">name</span><span class="o">=</span><span class="s2">"research_coordinator"</span><span class="p">,</span>
+<a href="#__codelineno-2-65" id="__codelineno-2-65" name="__codelineno-2-65"></a>            <span class="n">capabilities</span><span class="o">=</span><span class="p">[</span><span class="s2">"planning"</span><span class="p">,</span> <span class="s2">"coordination"</span><span class="p">,</span> <span class="s2">"task_decomposition"</span><span class="p">],</span>
+<a href="#__codelineno-2-66" id="__codelineno-2-66" name="__codelineno-2-66"></a>            <span class="n">llm_client</span><span class="o">=</span><span class="n">llm_client</span>
+<a href="#__codelineno-2-67" id="__codelineno-2-67" name="__codelineno-2-67"></a>        <span class="p">)</span>
+<a href="#__codelineno-2-68" id="__codelineno-2-68" name="__codelineno-2-68"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">active_agents</span> <span class="o">=</span> <span class="p">{}</span>
+<a href="#__codelineno-2-69" id="__codelineno-2-69" name="__codelineno-2-69"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">research_sessions</span> <span class="o">=</span> <span class="p">{}</span>
+<a href="#__codelineno-2-70" id="__codelineno-2-70" name="__codelineno-2-70"></a>
+<a href="#__codelineno-2-71" id="__codelineno-2-71" name="__codelineno-2-71"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">process_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<a href="#__codelineno-2-72" id="__codelineno-2-72" name="__codelineno-2-72"></a><span class="w">        </span><span class="sd">"""Coordinate research based on user query"""</span>
+<a href="#__codelineno-2-73" id="__codelineno-2-73" name="__codelineno-2-73"></a>        <span class="n">query</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"query"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
+<a href="#__codelineno-2-74" id="__codelineno-2-74" name="__codelineno-2-74"></a>        <span class="n">session_id</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"session_id"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()))</span>
+<a href="#__codelineno-2-75" id="__codelineno-2-75" name="__codelineno-2-75"></a>
+<a href="#__codelineno-2-76" id="__codelineno-2-76" name="__codelineno-2-76"></a>        <span class="c1"># Create research plan</span>
+<a href="#__codelineno-2-77" id="__codelineno-2-77" name="__codelineno-2-77"></a>        <span class="n">research_plan</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_research_plan</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<a href="#__codelineno-2-78" id="__codelineno-2-78" name="__codelineno-2-78"></a>
+<a href="#__codelineno-2-79" id="__codelineno-2-79" name="__codelineno-2-79"></a>        <span class="c1"># Initialize research session</span>
+<a href="#__codelineno-2-80" id="__codelineno-2-80" name="__codelineno-2-80"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">research_sessions</span><span class="p">[</span><span class="n">session_id</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<a href="#__codelineno-2-81" id="__codelineno-2-81" name="__codelineno-2-81"></a>            <span class="s2">"query"</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span>
+<a href="#__codelineno-2-82" id="__codelineno-2-82" name="__codelineno-2-82"></a>            <span class="s2">"plan"</span><span class="p">:</span> <span class="n">research_plan</span><span class="p">,</span>
+<a href="#__codelineno-2-83" id="__codelineno-2-83" name="__codelineno-2-83"></a>            <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"in_progress"</span><span class="p">,</span>
+<a href="#__codelineno-2-84" id="__codelineno-2-84" name="__codelineno-2-84"></a>            <span class="s2">"results"</span><span class="p">:</span> <span class="p">{},</span>
+<a href="#__codelineno-2-85" id="__codelineno-2-85" name="__codelineno-2-85"></a>            <span class="s2">"started_at"</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<a href="#__codelineno-2-86" id="__codelineno-2-86" name="__codelineno-2-86"></a>        <span class="p">}</span>
+<a href="#__codelineno-2-87" id="__codelineno-2-87" name="__codelineno-2-87"></a>
+<a href="#__codelineno-2-88" id="__codelineno-2-88" name="__codelineno-2-88"></a>        <span class="c1"># Execute research plan</span>
+<a href="#__codelineno-2-89" id="__codelineno-2-89" name="__codelineno-2-89"></a>        <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute_research_plan</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">research_plan</span><span class="p">)</span>
+<a href="#__codelineno-2-90" id="__codelineno-2-90" name="__codelineno-2-90"></a>
+<a href="#__codelineno-2-91" id="__codelineno-2-91" name="__codelineno-2-91"></a>        <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-2-92" id="__codelineno-2-92" name="__codelineno-2-92"></a>            <span class="s2">"session_id"</span><span class="p">:</span> <span class="n">session_id</span><span class="p">,</span>
+<a href="#__codelineno-2-93" id="__codelineno-2-93" name="__codelineno-2-93"></a>            <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"completed"</span><span class="p">,</span>
+<a href="#__codelineno-2-94" id="__codelineno-2-94" name="__codelineno-2-94"></a>            <span class="s2">"results"</span><span class="p">:</span> <span class="n">results</span><span class="p">,</span>
+<a href="#__codelineno-2-95" id="__codelineno-2-95" name="__codelineno-2-95"></a>            <span class="s2">"plan"</span><span class="p">:</span> <span class="n">research_plan</span>
+<a href="#__codelineno-2-96" id="__codelineno-2-96" name="__codelineno-2-96"></a>        <span class="p">}</span>
+<a href="#__codelineno-2-97" id="__codelineno-2-97" name="__codelineno-2-97"></a>
+<a href="#__codelineno-2-98" id="__codelineno-2-98" name="__codelineno-2-98"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">create_research_plan</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<a href="#__codelineno-2-99" id="__codelineno-2-99" name="__codelineno-2-99"></a><span class="w">        </span><span class="sd">"""Create detailed research plan using LLM"""</span>
+<a href="#__codelineno-2-100" id="__codelineno-2-100" name="__codelineno-2-100"></a>        <span class="n">planning_prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"""</span>
+<a href="#__codelineno-2-101" id="__codelineno-2-101" name="__codelineno-2-101"></a><span class="s2">        Create a comprehensive research plan for the following query: "</span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s2">"</span>
+<a href="#__codelineno-2-102" id="__codelineno-2-102" name="__codelineno-2-102"></a>
+<a href="#__codelineno-2-103" id="__codelineno-2-103" name="__codelineno-2-103"></a><span class="s2">        Structure your plan with:</span>
+<a href="#__codelineno-2-104" id="__codelineno-2-104" name="__codelineno-2-104"></a><span class="s2">        1. Key research objectives</span>
+<a href="#__codelineno-2-105" id="__codelineno-2-105" name="__codelineno-2-105"></a><span class="s2">        2. Information sources to explore</span>
+<a href="#__codelineno-2-106" id="__codelineno-2-106" name="__codelineno-2-106"></a><span class="s2">        3. Analysis tasks needed</span>
+<a href="#__codelineno-2-107" id="__codelineno-2-107" name="__codelineno-2-107"></a><span class="s2">        4. Expected deliverables</span>
+<a href="#__codelineno-2-108" id="__codelineno-2-108" name="__codelineno-2-108"></a>
+<a href="#__codelineno-2-109" id="__codelineno-2-109" name="__codelineno-2-109"></a><span class="s2">        Format as structured JSON with tasks, dependencies, and agent assignments.</span>
+<a href="#__codelineno-2-110" id="__codelineno-2-110" name="__codelineno-2-110"></a><span class="s2">        """</span>
+<a href="#__codelineno-2-111" id="__codelineno-2-111" name="__codelineno-2-111"></a>
+<a href="#__codelineno-2-112" id="__codelineno-2-112" name="__codelineno-2-112"></a>        <span class="c1"># Simulate LLM planning (replace with actual API call)</span>
+<a href="#__codelineno-2-113" id="__codelineno-2-113" name="__codelineno-2-113"></a>        <span class="n">plan</span> <span class="o">=</span> <span class="p">{</span>
+<a href="#__codelineno-2-114" id="__codelineno-2-114" name="__codelineno-2-114"></a>            <span class="s2">"objectives"</span><span class="p">:</span> <span class="p">[</span>
+<a href="#__codelineno-2-115" id="__codelineno-2-115" name="__codelineno-2-115"></a>                <span class="s2">"Gather comprehensive information on the topic"</span><span class="p">,</span>
+<a href="#__codelineno-2-116" id="__codelineno-2-116" name="__codelineno-2-116"></a>                <span class="s2">"Analyze different perspectives and viewpoints"</span><span class="p">,</span>
+<a href="#__codelineno-2-117" id="__codelineno-2-117" name="__codelineno-2-117"></a>                <span class="s2">"Synthesize findings into coherent insights"</span><span class="p">,</span>
+<a href="#__codelineno-2-118" id="__codelineno-2-118" name="__codelineno-2-118"></a>                <span class="s2">"Generate actionable recommendations"</span>
+<a href="#__codelineno-2-119" id="__codelineno-2-119" name="__codelineno-2-119"></a>            <span class="p">],</span>
+<a href="#__codelineno-2-120" id="__codelineno-2-120" name="__codelineno-2-120"></a>            <span class="s2">"tasks"</span><span class="p">:</span> <span class="p">[</span>
+<a href="#__codelineno-2-121" id="__codelineno-2-121" name="__codelineno-2-121"></a>                <span class="p">{</span>
+<a href="#__codelineno-2-122" id="__codelineno-2-122" name="__codelineno-2-122"></a>                    <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"web_search"</span><span class="p">,</span>
+<a href="#__codelineno-2-123" id="__codelineno-2-123" name="__codelineno-2-123"></a>                    <span class="s2">"agent"</span><span class="p">:</span> <span class="s2">"web_search_agent"</span><span class="p">,</span>
+<a href="#__codelineno-2-124" id="__codelineno-2-124" name="__codelineno-2-124"></a>                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Search web for recent information"</span><span class="p">,</span>
+<a href="#__codelineno-2-125" id="__codelineno-2-125" name="__codelineno-2-125"></a>                    <span class="s2">"priority"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<a href="#__codelineno-2-126" id="__codelineno-2-126" name="__codelineno-2-126"></a>                    <span class="s2">"dependencies"</span><span class="p">:</span> <span class="p">[]</span>
+<a href="#__codelineno-2-127" id="__codelineno-2-127" name="__codelineno-2-127"></a>                <span class="p">},</span>
+<a href="#__codelineno-2-128" id="__codelineno-2-128" name="__codelineno-2-128"></a>                <span class="p">{</span>
+<a href="#__codelineno-2-129" id="__codelineno-2-129" name="__codelineno-2-129"></a>                    <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"academic_search"</span><span class="p">,</span>
+<a href="#__codelineno-2-130" id="__codelineno-2-130" name="__codelineno-2-130"></a>                    <span class="s2">"agent"</span><span class="p">:</span> <span class="s2">"academic_agent"</span><span class="p">,</span> 
+<a href="#__codelineno-2-131" id="__codelineno-2-131" name="__codelineno-2-131"></a>                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Find relevant academic papers"</span><span class="p">,</span>
+<a href="#__codelineno-2-132" id="__codelineno-2-132" name="__codelineno-2-132"></a>                    <span class="s2">"priority"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<a href="#__codelineno-2-133" id="__codelineno-2-133" name="__codelineno-2-133"></a>                    <span class="s2">"dependencies"</span><span class="p">:</span> <span class="p">[]</span>
+<a href="#__codelineno-2-134" id="__codelineno-2-134" name="__codelineno-2-134"></a>                <span class="p">},</span>
+<a href="#__codelineno-2-135" id="__codelineno-2-135" name="__codelineno-2-135"></a>                <span class="p">{</span>
+<a href="#__codelineno-2-136" id="__codelineno-2-136" name="__codelineno-2-136"></a>                    <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"synthesis"</span><span class="p">,</span>
+<a href="#__codelineno-2-137" id="__codelineno-2-137" name="__codelineno-2-137"></a>                    <span class="s2">"agent"</span><span class="p">:</span> <span class="s2">"synthesis_agent"</span><span class="p">,</span>
+<a href="#__codelineno-2-138" id="__codelineno-2-138" name="__codelineno-2-138"></a>                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Combine information from all sources"</span><span class="p">,</span>
+<a href="#__codelineno-2-139" id="__codelineno-2-139" name="__codelineno-2-139"></a>                    <span class="s2">"priority"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+<a href="#__codelineno-2-140" id="__codelineno-2-140" name="__codelineno-2-140"></a>                    <span class="s2">"dependencies"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"web_search"</span><span class="p">,</span> <span class="s2">"academic_search"</span><span class="p">]</span>
+<a href="#__codelineno-2-141" id="__codelineno-2-141" name="__codelineno-2-141"></a>                <span class="p">},</span>
+<a href="#__codelineno-2-142" id="__codelineno-2-142" name="__codelineno-2-142"></a>                <span class="p">{</span>
+<a href="#__codelineno-2-143" id="__codelineno-2-143" name="__codelineno-2-143"></a>                    <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"report_generation"</span><span class="p">,</span>
+<a href="#__codelineno-2-144" id="__codelineno-2-144" name="__codelineno-2-144"></a>                    <span class="s2">"agent"</span><span class="p">:</span> <span class="s2">"report_generator"</span><span class="p">,</span>
+<a href="#__codelineno-2-145" id="__codelineno-2-145" name="__codelineno-2-145"></a>                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Generate comprehensive report"</span><span class="p">,</span>
+<a href="#__codelineno-2-146" id="__codelineno-2-146" name="__codelineno-2-146"></a>                    <span class="s2">"priority"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+<a href="#__codelineno-2-147" id="__codelineno-2-147" name="__codelineno-2-147"></a>                    <span class="s2">"dependencies"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"synthesis"</span><span class="p">]</span>
+<a href="#__codelineno-2-148" id="__codelineno-2-148" name="__codelineno-2-148"></a>                <span class="p">}</span>
+<a href="#__codelineno-2-149" id="__codelineno-2-149" name="__codelineno-2-149"></a>            <span class="p">],</span>
+<a href="#__codelineno-2-150" id="__codelineno-2-150" name="__codelineno-2-150"></a>            <span class="s2">"timeline"</span><span class="p">:</span> <span class="s2">"30-45 minutes"</span><span class="p">,</span>
+<a href="#__codelineno-2-151" id="__codelineno-2-151" name="__codelineno-2-151"></a>            <span class="s2">"resources_needed"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"web_search"</span><span class="p">,</span> <span class="s2">"academic_database"</span><span class="p">,</span> <span class="s2">"synthesis_engine"</span><span class="p">]</span>
+<a href="#__codelineno-2-152" id="__codelineno-2-152" name="__codelineno-2-152"></a>        <span class="p">}</span>
+<a href="#__codelineno-2-153" id="__codelineno-2-153" name="__codelineno-2-153"></a>
+<a href="#__codelineno-2-154" id="__codelineno-2-154" name="__codelineno-2-154"></a>        <span class="k">return</span> <span class="n">plan</span>
+<a href="#__codelineno-2-155" id="__codelineno-2-155" name="__codelineno-2-155"></a>
+<a href="#__codelineno-2-156" id="__codelineno-2-156" name="__codelineno-2-156"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">execute_research_plan</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">plan</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<a href="#__codelineno-2-157" id="__codelineno-2-157" name="__codelineno-2-157"></a><span class="w">        </span><span class="sd">"""Execute research plan with multiple agents"""</span>
+<a href="#__codelineno-2-158" id="__codelineno-2-158" name="__codelineno-2-158"></a>        <span class="n">tasks</span> <span class="o">=</span> <span class="n">plan</span><span class="p">[</span><span class="s2">"tasks"</span><span class="p">]</span>
+<a href="#__codelineno-2-159" id="__codelineno-2-159" name="__codelineno-2-159"></a>        <span class="n">completed_tasks</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<a href="#__codelineno-2-160" id="__codelineno-2-160" name="__codelineno-2-160"></a>        <span class="n">task_results</span> <span class="o">=</span> <span class="p">{}</span>
+<a href="#__codelineno-2-161" id="__codelineno-2-161" name="__codelineno-2-161"></a>
+<a href="#__codelineno-2-162" id="__codelineno-2-162" name="__codelineno-2-162"></a>        <span class="c1"># Execute tasks based on dependencies</span>
+<a href="#__codelineno-2-163" id="__codelineno-2-163" name="__codelineno-2-163"></a>        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">completed_tasks</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">tasks</span><span class="p">):</span>
+<a href="#__codelineno-2-164" id="__codelineno-2-164" name="__codelineno-2-164"></a>            <span class="n">ready_tasks</span> <span class="o">=</span> <span class="p">[</span>
+<a href="#__codelineno-2-165" id="__codelineno-2-165" name="__codelineno-2-165"></a>                <span class="n">task</span> <span class="k">for</span> <span class="n">task</span> <span class="ow">in</span> <span class="n">tasks</span> 
+<a href="#__codelineno-2-166" id="__codelineno-2-166" name="__codelineno-2-166"></a>                <span class="k">if</span> <span class="n">task</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">completed_tasks</span> <span class="ow">and</span> 
+<a href="#__codelineno-2-167" id="__codelineno-2-167" name="__codelineno-2-167"></a>                <span class="nb">all</span><span class="p">(</span><span class="n">dep</span> <span class="ow">in</span> <span class="n">completed_tasks</span> <span class="k">for</span> <span class="n">dep</span> <span class="ow">in</span> <span class="n">task</span><span class="p">[</span><span class="s2">"dependencies"</span><span class="p">])</span>
+<a href="#__codelineno-2-168" id="__codelineno-2-168" name="__codelineno-2-168"></a>            <span class="p">]</span>
+<a href="#__codelineno-2-169" id="__codelineno-2-169" name="__codelineno-2-169"></a>
+<a href="#__codelineno-2-170" id="__codelineno-2-170" name="__codelineno-2-170"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">ready_tasks</span><span class="p">:</span>
+<a href="#__codelineno-2-171" id="__codelineno-2-171" name="__codelineno-2-171"></a>                <span class="k">break</span>
+<a href="#__codelineno-2-172" id="__codelineno-2-172" name="__codelineno-2-172"></a>
+<a href="#__codelineno-2-173" id="__codelineno-2-173" name="__codelineno-2-173"></a>            <span class="c1"># Execute ready tasks in parallel</span>
+<a href="#__codelineno-2-174" id="__codelineno-2-174" name="__codelineno-2-174"></a>            <span class="n">task_futures</span> <span class="o">=</span> <span class="p">[]</span>
+<a href="#__codelineno-2-175" id="__codelineno-2-175" name="__codelineno-2-175"></a>            <span class="k">for</span> <span class="n">task</span> <span class="ow">in</span> <span class="n">ready_tasks</span><span class="p">:</span>
+<a href="#__codelineno-2-176" id="__codelineno-2-176" name="__codelineno-2-176"></a>                <span class="n">future</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">execute_task</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">task_results</span><span class="p">)</span>
+<a href="#__codelineno-2-177" id="__codelineno-2-177" name="__codelineno-2-177"></a>                <span class="n">task_futures</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">task</span><span class="p">,</span> <span class="n">future</span><span class="p">))</span>
+<a href="#__codelineno-2-178" id="__codelineno-2-178" name="__codelineno-2-178"></a>
+<a href="#__codelineno-2-179" id="__codelineno-2-179" name="__codelineno-2-179"></a>            <span class="c1"># Wait for task completion</span>
+<a href="#__codelineno-2-180" id="__codelineno-2-180" name="__codelineno-2-180"></a>            <span class="k">for</span> <span class="n">task</span><span class="p">,</span> <span class="n">future</span> <span class="ow">in</span> <span class="n">task_futures</span><span class="p">:</span>
+<a href="#__codelineno-2-181" id="__codelineno-2-181" name="__codelineno-2-181"></a>                <span class="k">try</span><span class="p">:</span>
+<a href="#__codelineno-2-182" id="__codelineno-2-182" name="__codelineno-2-182"></a>                    <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">future</span>
+<a href="#__codelineno-2-183" id="__codelineno-2-183" name="__codelineno-2-183"></a>                    <span class="n">task_results</span><span class="p">[</span><span class="n">task</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]]</span> <span class="o">=</span> <span class="n">result</span>
+<a href="#__codelineno-2-184" id="__codelineno-2-184" name="__codelineno-2-184"></a>                    <span class="n">completed_tasks</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">task</span><span class="p">[</span><span class="s2">"id"</span><span class="p">])</span>
+<a href="#__codelineno-2-185" id="__codelineno-2-185" name="__codelineno-2-185"></a>
+<a href="#__codelineno-2-186" id="__codelineno-2-186" name="__codelineno-2-186"></a>                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Completed task: </span><span class="si">{</span><span class="n">task</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a href="#__codelineno-2-187" id="__codelineno-2-187" name="__codelineno-2-187"></a>                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a href="#__codelineno-2-188" id="__codelineno-2-188" name="__codelineno-2-188"></a>                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Task </span><span class="si">{</span><span class="n">task</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span><span class="si">}</span><span class="s2"> failed: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a href="#__codelineno-2-189" id="__codelineno-2-189" name="__codelineno-2-189"></a>                    <span class="n">task_results</span><span class="p">[</span><span class="n">task</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"error"</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)}</span>
+<a href="#__codelineno-2-190" id="__codelineno-2-190" name="__codelineno-2-190"></a>                    <span class="n">completed_tasks</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">task</span><span class="p">[</span><span class="s2">"id"</span><span class="p">])</span>  <span class="c1"># Mark as completed to avoid infinite loop</span>
+<a href="#__codelineno-2-191" id="__codelineno-2-191" name="__codelineno-2-191"></a>
+<a href="#__codelineno-2-192" id="__codelineno-2-192" name="__codelineno-2-192"></a>        <span class="k">return</span> <span class="n">task_results</span>
+<a href="#__codelineno-2-193" id="__codelineno-2-193" name="__codelineno-2-193"></a>
+<a href="#__codelineno-2-194" id="__codelineno-2-194" name="__codelineno-2-194"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">execute_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">task</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">context</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<a href="#__codelineno-2-195" id="__codelineno-2-195" name="__codelineno-2-195"></a><span class="w">        </span><span class="sd">"""Execute individual task"""</span>
+<a href="#__codelineno-2-196" id="__codelineno-2-196" name="__codelineno-2-196"></a>        <span class="c1"># Simulate task execution (replace with actual agent calls)</span>
+<a href="#__codelineno-2-197" id="__codelineno-2-197" name="__codelineno-2-197"></a>        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Simulate processing time</span>
+<a href="#__codelineno-2-198" id="__codelineno-2-198" name="__codelineno-2-198"></a>
+<a href="#__codelineno-2-199" id="__codelineno-2-199" name="__codelineno-2-199"></a>        <span class="k">if</span> <span class="n">task</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"web_search"</span><span class="p">:</span>
+<a href="#__codelineno-2-200" id="__codelineno-2-200" name="__codelineno-2-200"></a>            <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-2-201" id="__codelineno-2-201" name="__codelineno-2-201"></a>                <span class="s2">"sources"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"source1.com"</span><span class="p">,</span> <span class="s2">"source2.org"</span><span class="p">],</span>
+<a href="#__codelineno-2-202" id="__codelineno-2-202" name="__codelineno-2-202"></a>                <span class="s2">"summary"</span><span class="p">:</span> <span class="s2">"Web search completed successfully"</span><span class="p">,</span>
+<a href="#__codelineno-2-203" id="__codelineno-2-203" name="__codelineno-2-203"></a>                <span class="s2">"key_findings"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Finding 1"</span><span class="p">,</span> <span class="s2">"Finding 2"</span><span class="p">,</span> <span class="s2">"Finding 3"</span><span class="p">]</span>
+<a href="#__codelineno-2-204" id="__codelineno-2-204" name="__codelineno-2-204"></a>            <span class="p">}</span>
+<a href="#__codelineno-2-205" id="__codelineno-2-205" name="__codelineno-2-205"></a>        <span class="k">elif</span> <span class="n">task</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"academic_search"</span><span class="p">:</span>
+<a href="#__codelineno-2-206" id="__codelineno-2-206" name="__codelineno-2-206"></a>            <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-2-207" id="__codelineno-2-207" name="__codelineno-2-207"></a>                <span class="s2">"papers"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Paper 1"</span><span class="p">,</span> <span class="s2">"Paper 2"</span><span class="p">],</span>
+<a href="#__codelineno-2-208" id="__codelineno-2-208" name="__codelineno-2-208"></a>                <span class="s2">"summary"</span><span class="p">:</span> <span class="s2">"Academic search completed"</span><span class="p">,</span>
+<a href="#__codelineno-2-209" id="__codelineno-2-209" name="__codelineno-2-209"></a>                <span class="s2">"citations"</span><span class="p">:</span> <span class="mi">15</span>
+<a href="#__codelineno-2-210" id="__codelineno-2-210" name="__codelineno-2-210"></a>            <span class="p">}</span>
+<a href="#__codelineno-2-211" id="__codelineno-2-211" name="__codelineno-2-211"></a>        <span class="k">elif</span> <span class="n">task</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"synthesis"</span><span class="p">:</span>
+<a href="#__codelineno-2-212" id="__codelineno-2-212" name="__codelineno-2-212"></a>            <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-2-213" id="__codelineno-2-213" name="__codelineno-2-213"></a>                <span class="s2">"combined_insights"</span><span class="p">:</span> <span class="s2">"Synthesized information from multiple sources"</span><span class="p">,</span>
+<a href="#__codelineno-2-214" id="__codelineno-2-214" name="__codelineno-2-214"></a>                <span class="s2">"contradictions"</span><span class="p">:</span> <span class="p">[],</span>
+<a href="#__codelineno-2-215" id="__codelineno-2-215" name="__codelineno-2-215"></a>                <span class="s2">"confidence"</span><span class="p">:</span> <span class="mf">0.85</span>
+<a href="#__codelineno-2-216" id="__codelineno-2-216" name="__codelineno-2-216"></a>            <span class="p">}</span>
+<a href="#__codelineno-2-217" id="__codelineno-2-217" name="__codelineno-2-217"></a>        <span class="k">elif</span> <span class="n">task</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"report_generation"</span><span class="p">:</span>
+<a href="#__codelineno-2-218" id="__codelineno-2-218" name="__codelineno-2-218"></a>            <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-2-219" id="__codelineno-2-219" name="__codelineno-2-219"></a>                <span class="s2">"report"</span><span class="p">:</span> <span class="s2">"Comprehensive research report generated"</span><span class="p">,</span>
+<a href="#__codelineno-2-220" id="__codelineno-2-220" name="__codelineno-2-220"></a>                <span class="s2">"sections"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Introduction"</span><span class="p">,</span> <span class="s2">"Methodology"</span><span class="p">,</span> <span class="s2">"Findings"</span><span class="p">,</span> <span class="s2">"Conclusions"</span><span class="p">],</span>
+<a href="#__codelineno-2-221" id="__codelineno-2-221" name="__codelineno-2-221"></a>                <span class="s2">"word_count"</span><span class="p">:</span> <span class="mi">2500</span>
+<a href="#__codelineno-2-222" id="__codelineno-2-222" name="__codelineno-2-222"></a>            <span class="p">}</span>
+<a href="#__codelineno-2-223" id="__codelineno-2-223" name="__codelineno-2-223"></a>
+<a href="#__codelineno-2-224" id="__codelineno-2-224" name="__codelineno-2-224"></a>        <span class="k">return</span> <span class="p">{</span><span class="s2">"status"</span><span class="p">:</span> <span class="s2">"completed"</span><span class="p">,</span> <span class="s2">"task_id"</span><span class="p">:</span> <span class="n">task</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]}</span>
+<a href="#__codelineno-2-225" id="__codelineno-2-225" name="__codelineno-2-225"></a>
+<a href="#__codelineno-2-226" id="__codelineno-2-226" name="__codelineno-2-226"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_capabilities</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<a href="#__codelineno-2-227" id="__codelineno-2-227" name="__codelineno-2-227"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">capabilities</span>
+<a href="#__codelineno-2-228" id="__codelineno-2-228" name="__codelineno-2-228"></a>
+<a href="#__codelineno-2-229" id="__codelineno-2-229" name="__codelineno-2-229"></a><span class="c1"># Initialize system components</span>
+<a href="#__codelineno-2-230" id="__codelineno-2-230" name="__codelineno-2-230"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">initialize_research_system</span><span class="p">():</span>
+<a href="#__codelineno-2-231" id="__codelineno-2-231" name="__codelineno-2-231"></a><span class="w">    </span><span class="sd">"""Initialize the research assistant system"""</span>
+<a href="#__codelineno-2-232" id="__codelineno-2-232" name="__codelineno-2-232"></a>
+<a href="#__codelineno-2-233" id="__codelineno-2-233" name="__codelineno-2-233"></a>    <span class="c1"># Create coordinator</span>
+<a href="#__codelineno-2-234" id="__codelineno-2-234" name="__codelineno-2-234"></a>    <span class="n">coordinator</span> <span class="o">=</span> <span class="n">ResearchCoordinator</span><span class="p">(</span><span class="n">llm_client</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>  <span class="c1"># Add actual LLM client</span>
+<a href="#__codelineno-2-235" id="__codelineno-2-235" name="__codelineno-2-235"></a>    <span class="k">await</span> <span class="n">coordinator</span><span class="o">.</span><span class="n">initialize</span><span class="p">()</span>
+<a href="#__codelineno-2-236" id="__codelineno-2-236" name="__codelineno-2-236"></a>
+<a href="#__codelineno-2-237" id="__codelineno-2-237" name="__codelineno-2-237"></a>    <span class="c1"># Test basic functionality</span>
+<a href="#__codelineno-2-238" id="__codelineno-2-238" name="__codelineno-2-238"></a>    <span class="n">test_message</span> <span class="o">=</span> <span class="p">{</span>
+<a href="#__codelineno-2-239" id="__codelineno-2-239" name="__codelineno-2-239"></a>        <span class="s2">"query"</span><span class="p">:</span> <span class="s2">"What are the latest developments in quantum computing?"</span><span class="p">,</span>
+<a href="#__codelineno-2-240" id="__codelineno-2-240" name="__codelineno-2-240"></a>        <span class="s2">"session_id"</span><span class="p">:</span> <span class="s2">"test_session"</span>
+<a href="#__codelineno-2-241" id="__codelineno-2-241" name="__codelineno-2-241"></a>    <span class="p">}</span>
+<a href="#__codelineno-2-242" id="__codelineno-2-242" name="__codelineno-2-242"></a>
+<a href="#__codelineno-2-243" id="__codelineno-2-243" name="__codelineno-2-243"></a>    <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">coordinator</span><span class="o">.</span><span class="n">process_message</span><span class="p">(</span><span class="n">test_message</span><span class="p">)</span>
+<a href="#__codelineno-2-244" id="__codelineno-2-244" name="__codelineno-2-244"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"System initialized successfully!"</span><span class="p">)</span>
+<a href="#__codelineno-2-245" id="__codelineno-2-245" name="__codelineno-2-245"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Test result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a href="#__codelineno-2-246" id="__codelineno-2-246" name="__codelineno-2-246"></a>
+<a href="#__codelineno-2-247" id="__codelineno-2-247" name="__codelineno-2-247"></a>    <span class="k">return</span> <span class="n">coordinator</span>
+<a href="#__codelineno-2-248" id="__codelineno-2-248" name="__codelineno-2-248"></a>
+<a href="#__codelineno-2-249" id="__codelineno-2-249" name="__codelineno-2-249"></a><span class="c1"># Run initialization</span>
+<a href="#__codelineno-2-250" id="__codelineno-2-250" name="__codelineno-2-250"></a><span class="c1"># coordinator = asyncio.run(initialize_research_system())</span>
+</code></pre></div></p>
+<h3 id="phase-3-specialized-agents-week-3-4">Phase 3: Specialized Agents (Week 3-4)</h3>
+<p><strong>Web Search Agent</strong>:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">aiohttp</span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">bs4</span><span class="w"> </span><span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span>
+<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a>
+<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">WebSearchAgent</span><span class="p">(</span><span class="n">BaseAgent</span><span class="p">):</span>
+<a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">    </span><span class="sd">"""Agent specialized in web search and content extraction"""</span>
+<a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a>
+<a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llm_client</span><span class="p">,</span> <span class="n">search_api_key</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+<a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a>            <span class="n">name</span><span class="o">=</span><span class="s2">"web_search_agent"</span><span class="p">,</span>
+<a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a>            <span class="n">capabilities</span><span class="o">=</span><span class="p">[</span><span class="s2">"web_search"</span><span class="p">,</span> <span class="s2">"content_extraction"</span><span class="p">,</span> <span class="s2">"url_analysis"</span><span class="p">],</span>
+<a href="#__codelineno-3-13" id="__codelineno-3-13" name="__codelineno-3-13"></a>            <span class="n">llm_client</span><span class="o">=</span><span class="n">llm_client</span>
+<a href="#__codelineno-3-14" id="__codelineno-3-14" name="__codelineno-3-14"></a>        <span class="p">)</span>
+<a href="#__codelineno-3-15" id="__codelineno-3-15" name="__codelineno-3-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">search_api_key</span> <span class="o">=</span> <span class="n">search_api_key</span>
+<a href="#__codelineno-3-16" id="__codelineno-3-16" name="__codelineno-3-16"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">max_results</span> <span class="o">=</span> <span class="mi">10</span>
+<a href="#__codelineno-3-17" id="__codelineno-3-17" name="__codelineno-3-17"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">30</span>
+<a href="#__codelineno-3-18" id="__codelineno-3-18" name="__codelineno-3-18"></a>
+<a href="#__codelineno-3-19" id="__codelineno-3-19" name="__codelineno-3-19"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">process_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<a href="#__codelineno-3-20" id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="w">        </span><span class="sd">"""Process search request"""</span>
+<a href="#__codelineno-3-21" id="__codelineno-3-21" name="__codelineno-3-21"></a>        <span class="n">query</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"query"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
+<a href="#__codelineno-3-22" id="__codelineno-3-22" name="__codelineno-3-22"></a>        <span class="n">max_results</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"max_results"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_results</span><span class="p">)</span>
+<a href="#__codelineno-3-23" id="__codelineno-3-23" name="__codelineno-3-23"></a>
+<a href="#__codelineno-3-24" id="__codelineno-3-24" name="__codelineno-3-24"></a>        <span class="k">try</span><span class="p">:</span>
+<a href="#__codelineno-3-25" id="__codelineno-3-25" name="__codelineno-3-25"></a>            <span class="c1"># Perform web search</span>
+<a href="#__codelineno-3-26" id="__codelineno-3-26" name="__codelineno-3-26"></a>            <span class="n">search_results</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">web_search</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">max_results</span><span class="p">)</span>
+<a href="#__codelineno-3-27" id="__codelineno-3-27" name="__codelineno-3-27"></a>
+<a href="#__codelineno-3-28" id="__codelineno-3-28" name="__codelineno-3-28"></a>            <span class="c1"># Extract content from top results</span>
+<a href="#__codelineno-3-29" id="__codelineno-3-29" name="__codelineno-3-29"></a>            <span class="n">content_results</span> <span class="o">=</span> <span class="p">[]</span>
+<a href="#__codelineno-3-30" id="__codelineno-3-30" name="__codelineno-3-30"></a>            <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">search_results</span><span class="p">[:</span><span class="mi">5</span><span class="p">]:</span>  <span class="c1"># Extract content from top 5</span>
+<a href="#__codelineno-3-31" id="__codelineno-3-31" name="__codelineno-3-31"></a>                <span class="n">content</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_content</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s2">"url"</span><span class="p">])</span>
+<a href="#__codelineno-3-32" id="__codelineno-3-32" name="__codelineno-3-32"></a>                <span class="k">if</span> <span class="n">content</span><span class="p">:</span>
+<a href="#__codelineno-3-33" id="__codelineno-3-33" name="__codelineno-3-33"></a>                    <span class="n">content_results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<a href="#__codelineno-3-34" id="__codelineno-3-34" name="__codelineno-3-34"></a>                        <span class="o">**</span><span class="n">result</span><span class="p">,</span>
+<a href="#__codelineno-3-35" id="__codelineno-3-35" name="__codelineno-3-35"></a>                        <span class="s2">"content"</span><span class="p">:</span> <span class="n">content</span><span class="p">[</span><span class="s2">"text"</span><span class="p">][:</span><span class="mi">1000</span><span class="p">],</span>  <span class="c1"># First 1000 chars</span>
+<a href="#__codelineno-3-36" id="__codelineno-3-36" name="__codelineno-3-36"></a>                        <span class="s2">"content_summary"</span><span class="p">:</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">summarize_content</span><span class="p">(</span><span class="n">content</span><span class="p">[</span><span class="s2">"text"</span><span class="p">])</span>
+<a href="#__codelineno-3-37" id="__codelineno-3-37" name="__codelineno-3-37"></a>                    <span class="p">})</span>
+<a href="#__codelineno-3-38" id="__codelineno-3-38" name="__codelineno-3-38"></a>
+<a href="#__codelineno-3-39" id="__codelineno-3-39" name="__codelineno-3-39"></a>            <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-3-40" id="__codelineno-3-40" name="__codelineno-3-40"></a>                <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"success"</span><span class="p">,</span>
+<a href="#__codelineno-3-41" id="__codelineno-3-41" name="__codelineno-3-41"></a>                <span class="s2">"query"</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span>
+<a href="#__codelineno-3-42" id="__codelineno-3-42" name="__codelineno-3-42"></a>                <span class="s2">"search_results"</span><span class="p">:</span> <span class="n">search_results</span><span class="p">,</span>
+<a href="#__codelineno-3-43" id="__codelineno-3-43" name="__codelineno-3-43"></a>                <span class="s2">"content_results"</span><span class="p">:</span> <span class="n">content_results</span><span class="p">,</span>
+<a href="#__codelineno-3-44" id="__codelineno-3-44" name="__codelineno-3-44"></a>                <span class="s2">"total_found"</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">search_results</span><span class="p">)</span>
+<a href="#__codelineno-3-45" id="__codelineno-3-45" name="__codelineno-3-45"></a>            <span class="p">}</span>
+<a href="#__codelineno-3-46" id="__codelineno-3-46" name="__codelineno-3-46"></a>
+<a href="#__codelineno-3-47" id="__codelineno-3-47" name="__codelineno-3-47"></a>        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a href="#__codelineno-3-48" id="__codelineno-3-48" name="__codelineno-3-48"></a>            <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-3-49" id="__codelineno-3-49" name="__codelineno-3-49"></a>                <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"error"</span><span class="p">,</span>
+<a href="#__codelineno-3-50" id="__codelineno-3-50" name="__codelineno-3-50"></a>                <span class="s2">"error"</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">),</span>
+<a href="#__codelineno-3-51" id="__codelineno-3-51" name="__codelineno-3-51"></a>                <span class="s2">"query"</span><span class="p">:</span> <span class="n">query</span>
+<a href="#__codelineno-3-52" id="__codelineno-3-52" name="__codelineno-3-52"></a>            <span class="p">}</span>
+<a href="#__codelineno-3-53" id="__codelineno-3-53" name="__codelineno-3-53"></a>
+<a href="#__codelineno-3-54" id="__codelineno-3-54" name="__codelineno-3-54"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">web_search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">max_results</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<a href="#__codelineno-3-55" id="__codelineno-3-55" name="__codelineno-3-55"></a><span class="w">        </span><span class="sd">"""Perform web search (implement with actual search API)"""</span>
+<a href="#__codelineno-3-56" id="__codelineno-3-56" name="__codelineno-3-56"></a>        <span class="c1"># Simulate web search results</span>
+<a href="#__codelineno-3-57" id="__codelineno-3-57" name="__codelineno-3-57"></a>        <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+<a href="#__codelineno-3-58" id="__codelineno-3-58" name="__codelineno-3-58"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_results</span><span class="p">):</span>
+<a href="#__codelineno-3-59" id="__codelineno-3-59" name="__codelineno-3-59"></a>            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<a href="#__codelineno-3-60" id="__codelineno-3-60" name="__codelineno-3-60"></a>                <span class="s2">"title"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"Search Result </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> for '</span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s2">'"</span><span class="p">,</span>
+<a href="#__codelineno-3-61" id="__codelineno-3-61" name="__codelineno-3-61"></a>                <span class="s2">"url"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"https://example</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">.com/article"</span><span class="p">,</span>
+<a href="#__codelineno-3-62" id="__codelineno-3-62" name="__codelineno-3-62"></a>                <span class="s2">"snippet"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"This is a snippet for result </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> about </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s2">..."</span><span class="p">,</span>
+<a href="#__codelineno-3-63" id="__codelineno-3-63" name="__codelineno-3-63"></a>                <span class="s2">"date"</span><span class="p">:</span> <span class="s2">"2024-01-15"</span><span class="p">,</span>
+<a href="#__codelineno-3-64" id="__codelineno-3-64" name="__codelineno-3-64"></a>                <span class="s2">"relevance_score"</span><span class="p">:</span> <span class="mf">0.9</span> <span class="o">-</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">)</span>
+<a href="#__codelineno-3-65" id="__codelineno-3-65" name="__codelineno-3-65"></a>            <span class="p">})</span>
+<a href="#__codelineno-3-66" id="__codelineno-3-66" name="__codelineno-3-66"></a>
+<a href="#__codelineno-3-67" id="__codelineno-3-67" name="__codelineno-3-67"></a>        <span class="k">return</span> <span class="n">results</span>
+<a href="#__codelineno-3-68" id="__codelineno-3-68" name="__codelineno-3-68"></a>
+<a href="#__codelineno-3-69" id="__codelineno-3-69" name="__codelineno-3-69"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">extract_content</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<a href="#__codelineno-3-70" id="__codelineno-3-70" name="__codelineno-3-70"></a><span class="w">        </span><span class="sd">"""Extract text content from URL"""</span>
+<a href="#__codelineno-3-71" id="__codelineno-3-71" name="__codelineno-3-71"></a>        <span class="k">try</span><span class="p">:</span>
+<a href="#__codelineno-3-72" id="__codelineno-3-72" name="__codelineno-3-72"></a>            <span class="k">async</span> <span class="k">with</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">ClientSession</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="n">aiohttp</span><span class="o">.</span><span class="n">ClientTimeout</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">))</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+<a href="#__codelineno-3-73" id="__codelineno-3-73" name="__codelineno-3-73"></a>                <span class="k">async</span> <span class="k">with</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">:</span>
+<a href="#__codelineno-3-74" id="__codelineno-3-74" name="__codelineno-3-74"></a>                    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+<a href="#__codelineno-3-75" id="__codelineno-3-75" name="__codelineno-3-75"></a>                        <span class="n">html</span> <span class="o">=</span> <span class="k">await</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">()</span>
+<a href="#__codelineno-3-76" id="__codelineno-3-76" name="__codelineno-3-76"></a>                        <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s1">'html.parser'</span><span class="p">)</span>
+<a href="#__codelineno-3-77" id="__codelineno-3-77" name="__codelineno-3-77"></a>
+<a href="#__codelineno-3-78" id="__codelineno-3-78" name="__codelineno-3-78"></a>                        <span class="c1"># Remove script and style elements</span>
+<a href="#__codelineno-3-79" id="__codelineno-3-79" name="__codelineno-3-79"></a>                        <span class="k">for</span> <span class="n">script</span> <span class="ow">in</span> <span class="n">soup</span><span class="p">([</span><span class="s2">"script"</span><span class="p">,</span> <span class="s2">"style"</span><span class="p">]):</span>
+<a href="#__codelineno-3-80" id="__codelineno-3-80" name="__codelineno-3-80"></a>                            <span class="n">script</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
+<a href="#__codelineno-3-81" id="__codelineno-3-81" name="__codelineno-3-81"></a>
+<a href="#__codelineno-3-82" id="__codelineno-3-82" name="__codelineno-3-82"></a>                        <span class="c1"># Extract text</span>
+<a href="#__codelineno-3-83" id="__codelineno-3-83" name="__codelineno-3-83"></a>                        <span class="n">text</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+<a href="#__codelineno-3-84" id="__codelineno-3-84" name="__codelineno-3-84"></a>
+<a href="#__codelineno-3-85" id="__codelineno-3-85" name="__codelineno-3-85"></a>                        <span class="c1"># Clean text</span>
+<a href="#__codelineno-3-86" id="__codelineno-3-86" name="__codelineno-3-86"></a>                        <span class="n">lines</span> <span class="o">=</span> <span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">splitlines</span><span class="p">())</span>
+<a href="#__codelineno-3-87" id="__codelineno-3-87" name="__codelineno-3-87"></a>                        <span class="n">chunks</span> <span class="o">=</span> <span class="p">(</span><span class="n">phrase</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span> <span class="k">for</span> <span class="n">phrase</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"  "</span><span class="p">))</span>
+<a href="#__codelineno-3-88" id="__codelineno-3-88" name="__codelineno-3-88"></a>                        <span class="n">text</span> <span class="o">=</span> <span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">chunk</span> <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">chunks</span> <span class="k">if</span> <span class="n">chunk</span><span class="p">)</span>
+<a href="#__codelineno-3-89" id="__codelineno-3-89" name="__codelineno-3-89"></a>
+<a href="#__codelineno-3-90" id="__codelineno-3-90" name="__codelineno-3-90"></a>                        <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-3-91" id="__codelineno-3-91" name="__codelineno-3-91"></a>                            <span class="s2">"text"</span><span class="p">:</span> <span class="n">text</span><span class="p">,</span>
+<a href="#__codelineno-3-92" id="__codelineno-3-92" name="__codelineno-3-92"></a>                            <span class="s2">"title"</span><span class="p">:</span> <span class="n">soup</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">string</span> <span class="k">if</span> <span class="n">soup</span><span class="o">.</span><span class="n">title</span> <span class="k">else</span> <span class="s2">""</span><span class="p">,</span>
+<a href="#__codelineno-3-93" id="__codelineno-3-93" name="__codelineno-3-93"></a>                            <span class="s2">"word_count"</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()),</span>
+<a href="#__codelineno-3-94" id="__codelineno-3-94" name="__codelineno-3-94"></a>                            <span class="s2">"url"</span><span class="p">:</span> <span class="n">url</span>
+<a href="#__codelineno-3-95" id="__codelineno-3-95" name="__codelineno-3-95"></a>                        <span class="p">}</span>
+<a href="#__codelineno-3-96" id="__codelineno-3-96" name="__codelineno-3-96"></a>        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a href="#__codelineno-3-97" id="__codelineno-3-97" name="__codelineno-3-97"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Failed to extract content from </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<a href="#__codelineno-3-98" id="__codelineno-3-98" name="__codelineno-3-98"></a>            <span class="k">return</span> <span class="kc">None</span>
+<a href="#__codelineno-3-99" id="__codelineno-3-99" name="__codelineno-3-99"></a>
+<a href="#__codelineno-3-100" id="__codelineno-3-100" name="__codelineno-3-100"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">summarize_content</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">content</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<a href="#__codelineno-3-101" id="__codelineno-3-101" name="__codelineno-3-101"></a><span class="w">        </span><span class="sd">"""Summarize extracted content using LLM"""</span>
+<a href="#__codelineno-3-102" id="__codelineno-3-102" name="__codelineno-3-102"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">content</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">:</span>
+<a href="#__codelineno-3-103" id="__codelineno-3-103" name="__codelineno-3-103"></a>            <span class="k">return</span> <span class="n">content</span>
+<a href="#__codelineno-3-104" id="__codelineno-3-104" name="__codelineno-3-104"></a>
+<a href="#__codelineno-3-105" id="__codelineno-3-105" name="__codelineno-3-105"></a>        <span class="c1"># Simulate content summarization</span>
+<a href="#__codelineno-3-106" id="__codelineno-3-106" name="__codelineno-3-106"></a>        <span class="n">sentences</span> <span class="o">=</span> <span class="n">content</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'. '</span><span class="p">)[:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># First 3 sentences</span>
+<a href="#__codelineno-3-107" id="__codelineno-3-107" name="__codelineno-3-107"></a>        <span class="k">return</span> <span class="s1">'. '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'.'</span>
+<a href="#__codelineno-3-108" id="__codelineno-3-108" name="__codelineno-3-108"></a>
+<a href="#__codelineno-3-109" id="__codelineno-3-109" name="__codelineno-3-109"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_capabilities</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<a href="#__codelineno-3-110" id="__codelineno-3-110" name="__codelineno-3-110"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">capabilities</span>
+<a href="#__codelineno-3-111" id="__codelineno-3-111" name="__codelineno-3-111"></a>
+<a href="#__codelineno-3-112" id="__codelineno-3-112" name="__codelineno-3-112"></a><span class="k">class</span><span class="w"> </span><span class="nc">AcademicAgent</span><span class="p">(</span><span class="n">BaseAgent</span><span class="p">):</span>
+<a href="#__codelineno-3-113" id="__codelineno-3-113" name="__codelineno-3-113"></a><span class="w">    </span><span class="sd">"""Agent specialized in academic paper search and analysis"""</span>
+<a href="#__codelineno-3-114" id="__codelineno-3-114" name="__codelineno-3-114"></a>
+<a href="#__codelineno-3-115" id="__codelineno-3-115" name="__codelineno-3-115"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llm_client</span><span class="p">):</span>
+<a href="#__codelineno-3-116" id="__codelineno-3-116" name="__codelineno-3-116"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+<a href="#__codelineno-3-117" id="__codelineno-3-117" name="__codelineno-3-117"></a>            <span class="n">name</span><span class="o">=</span><span class="s2">"academic_agent"</span><span class="p">,</span>
+<a href="#__codelineno-3-118" id="__codelineno-3-118" name="__codelineno-3-118"></a>            <span class="n">capabilities</span><span class="o">=</span><span class="p">[</span><span class="s2">"paper_search"</span><span class="p">,</span> <span class="s2">"citation_analysis"</span><span class="p">,</span> <span class="s2">"abstract_analysis"</span><span class="p">],</span>
+<a href="#__codelineno-3-119" id="__codelineno-3-119" name="__codelineno-3-119"></a>            <span class="n">llm_client</span><span class="o">=</span><span class="n">llm_client</span>
+<a href="#__codelineno-3-120" id="__codelineno-3-120" name="__codelineno-3-120"></a>        <span class="p">)</span>
+<a href="#__codelineno-3-121" id="__codelineno-3-121" name="__codelineno-3-121"></a>
+<a href="#__codelineno-3-122" id="__codelineno-3-122" name="__codelineno-3-122"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">process_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<a href="#__codelineno-3-123" id="__codelineno-3-123" name="__codelineno-3-123"></a><span class="w">        </span><span class="sd">"""Process academic search request"""</span>
+<a href="#__codelineno-3-124" id="__codelineno-3-124" name="__codelineno-3-124"></a>        <span class="n">query</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"query"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
+<a href="#__codelineno-3-125" id="__codelineno-3-125" name="__codelineno-3-125"></a>
+<a href="#__codelineno-3-126" id="__codelineno-3-126" name="__codelineno-3-126"></a>        <span class="c1"># Search for papers</span>
+<a href="#__codelineno-3-127" id="__codelineno-3-127" name="__codelineno-3-127"></a>        <span class="n">papers</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">search_papers</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<a href="#__codelineno-3-128" id="__codelineno-3-128" name="__codelineno-3-128"></a>
+<a href="#__codelineno-3-129" id="__codelineno-3-129" name="__codelineno-3-129"></a>        <span class="c1"># Analyze abstracts</span>
+<a href="#__codelineno-3-130" id="__codelineno-3-130" name="__codelineno-3-130"></a>        <span class="n">analyzed_papers</span> <span class="o">=</span> <span class="p">[]</span>
+<a href="#__codelineno-3-131" id="__codelineno-3-131" name="__codelineno-3-131"></a>        <span class="k">for</span> <span class="n">paper</span> <span class="ow">in</span> <span class="n">papers</span><span class="p">[:</span><span class="mi">5</span><span class="p">]:</span>  <span class="c1"># Analyze top 5</span>
+<a href="#__codelineno-3-132" id="__codelineno-3-132" name="__codelineno-3-132"></a>            <span class="n">analysis</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">analyze_abstract</span><span class="p">(</span><span class="n">paper</span><span class="p">[</span><span class="s2">"abstract"</span><span class="p">])</span>
+<a href="#__codelineno-3-133" id="__codelineno-3-133" name="__codelineno-3-133"></a>            <span class="n">analyzed_papers</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<a href="#__codelineno-3-134" id="__codelineno-3-134" name="__codelineno-3-134"></a>                <span class="o">**</span><span class="n">paper</span><span class="p">,</span>
+<a href="#__codelineno-3-135" id="__codelineno-3-135" name="__codelineno-3-135"></a>                <span class="s2">"analysis"</span><span class="p">:</span> <span class="n">analysis</span>
+<a href="#__codelineno-3-136" id="__codelineno-3-136" name="__codelineno-3-136"></a>            <span class="p">})</span>
+<a href="#__codelineno-3-137" id="__codelineno-3-137" name="__codelineno-3-137"></a>
+<a href="#__codelineno-3-138" id="__codelineno-3-138" name="__codelineno-3-138"></a>        <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-3-139" id="__codelineno-3-139" name="__codelineno-3-139"></a>            <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"success"</span><span class="p">,</span> 
+<a href="#__codelineno-3-140" id="__codelineno-3-140" name="__codelineno-3-140"></a>            <span class="s2">"query"</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span>
+<a href="#__codelineno-3-141" id="__codelineno-3-141" name="__codelineno-3-141"></a>            <span class="s2">"papers_found"</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">papers</span><span class="p">),</span>
+<a href="#__codelineno-3-142" id="__codelineno-3-142" name="__codelineno-3-142"></a>            <span class="s2">"analyzed_papers"</span><span class="p">:</span> <span class="n">analyzed_papers</span><span class="p">,</span>
+<a href="#__codelineno-3-143" id="__codelineno-3-143" name="__codelineno-3-143"></a>            <span class="s2">"key_authors"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_key_authors</span><span class="p">(</span><span class="n">papers</span><span class="p">),</span>
+<a href="#__codelineno-3-144" id="__codelineno-3-144" name="__codelineno-3-144"></a>            <span class="s2">"publication_venues"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_venues</span><span class="p">(</span><span class="n">papers</span><span class="p">)</span>
+<a href="#__codelineno-3-145" id="__codelineno-3-145" name="__codelineno-3-145"></a>        <span class="p">}</span>
+<a href="#__codelineno-3-146" id="__codelineno-3-146" name="__codelineno-3-146"></a>
+<a href="#__codelineno-3-147" id="__codelineno-3-147" name="__codelineno-3-147"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">search_papers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<a href="#__codelineno-3-148" id="__codelineno-3-148" name="__codelineno-3-148"></a><span class="w">        </span><span class="sd">"""Search for academic papers (implement with arXiv API, Semantic Scholar, etc.)"""</span>
+<a href="#__codelineno-3-149" id="__codelineno-3-149" name="__codelineno-3-149"></a>        <span class="c1"># Simulate academic search</span>
+<a href="#__codelineno-3-150" id="__codelineno-3-150" name="__codelineno-3-150"></a>        <span class="n">papers</span> <span class="o">=</span> <span class="p">[]</span>
+<a href="#__codelineno-3-151" id="__codelineno-3-151" name="__codelineno-3-151"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<a href="#__codelineno-3-152" id="__codelineno-3-152" name="__codelineno-3-152"></a>            <span class="n">papers</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<a href="#__codelineno-3-153" id="__codelineno-3-153" name="__codelineno-3-153"></a>                <span class="s2">"title"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"Academic Paper </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s2"> Research"</span><span class="p">,</span>
+<a href="#__codelineno-3-154" id="__codelineno-3-154" name="__codelineno-3-154"></a>                <span class="s2">"authors"</span><span class="p">:</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"Author </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">A"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"Author </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">B"</span><span class="p">],</span>
+<a href="#__codelineno-3-155" id="__codelineno-3-155" name="__codelineno-3-155"></a>                <span class="s2">"abstract"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"This paper presents research on </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s2">. We investigate various aspects and provide novel insights. Our methodology involves comprehensive analysis and evaluation. The results demonstrate significant improvements over existing approaches."</span><span class="p">,</span>
+<a href="#__codelineno-3-156" id="__codelineno-3-156" name="__codelineno-3-156"></a>                <span class="s2">"year"</span><span class="p">:</span> <span class="mi">2023</span> <span class="o">-</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">3</span><span class="p">),</span>
+<a href="#__codelineno-3-157" id="__codelineno-3-157" name="__codelineno-3-157"></a>                <span class="s2">"venue"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"Conference </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+<a href="#__codelineno-3-158" id="__codelineno-3-158" name="__codelineno-3-158"></a>                <span class="s2">"citations"</span><span class="p">:</span> <span class="mi">50</span> <span class="o">-</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="mi">5</span><span class="p">),</span>
+<a href="#__codelineno-3-159" id="__codelineno-3-159" name="__codelineno-3-159"></a>                <span class="s2">"url"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"https://arxiv.org/abs/2301.</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">:</span><span class="s2">05d</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+<a href="#__codelineno-3-160" id="__codelineno-3-160" name="__codelineno-3-160"></a>                <span class="s2">"keywords"</span><span class="p">:</span> <span class="p">[</span><span class="n">query</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="s2">"machine learning"</span><span class="p">,</span> <span class="s2">"research"</span><span class="p">]</span>
+<a href="#__codelineno-3-161" id="__codelineno-3-161" name="__codelineno-3-161"></a>            <span class="p">})</span>
+<a href="#__codelineno-3-162" id="__codelineno-3-162" name="__codelineno-3-162"></a>        <span class="k">return</span> <span class="n">papers</span>
+<a href="#__codelineno-3-163" id="__codelineno-3-163" name="__codelineno-3-163"></a>
+<a href="#__codelineno-3-164" id="__codelineno-3-164" name="__codelineno-3-164"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">analyze_abstract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">abstract</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<a href="#__codelineno-3-165" id="__codelineno-3-165" name="__codelineno-3-165"></a><span class="w">        </span><span class="sd">"""Analyze paper abstract"""</span>
+<a href="#__codelineno-3-166" id="__codelineno-3-166" name="__codelineno-3-166"></a>        <span class="c1"># Simple analysis (replace with LLM-based analysis)</span>
+<a href="#__codelineno-3-167" id="__codelineno-3-167" name="__codelineno-3-167"></a>        <span class="n">word_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">abstract</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<a href="#__codelineno-3-168" id="__codelineno-3-168" name="__codelineno-3-168"></a>
+<a href="#__codelineno-3-169" id="__codelineno-3-169" name="__codelineno-3-169"></a>        <span class="c1"># Extract methodology keywords</span>
+<a href="#__codelineno-3-170" id="__codelineno-3-170" name="__codelineno-3-170"></a>        <span class="n">method_keywords</span> <span class="o">=</span> <span class="p">[]</span>
+<a href="#__codelineno-3-171" id="__codelineno-3-171" name="__codelineno-3-171"></a>        <span class="k">if</span> <span class="s2">"survey"</span> <span class="ow">in</span> <span class="n">abstract</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+<a href="#__codelineno-3-172" id="__codelineno-3-172" name="__codelineno-3-172"></a>            <span class="n">method_keywords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"survey"</span><span class="p">)</span>
+<a href="#__codelineno-3-173" id="__codelineno-3-173" name="__codelineno-3-173"></a>        <span class="k">if</span> <span class="s2">"experiment"</span> <span class="ow">in</span> <span class="n">abstract</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+<a href="#__codelineno-3-174" id="__codelineno-3-174" name="__codelineno-3-174"></a>            <span class="n">method_keywords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"experimental"</span><span class="p">)</span>
+<a href="#__codelineno-3-175" id="__codelineno-3-175" name="__codelineno-3-175"></a>        <span class="k">if</span> <span class="s2">"theoretical"</span> <span class="ow">in</span> <span class="n">abstract</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+<a href="#__codelineno-3-176" id="__codelineno-3-176" name="__codelineno-3-176"></a>            <span class="n">method_keywords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"theoretical"</span><span class="p">)</span>
+<a href="#__codelineno-3-177" id="__codelineno-3-177" name="__codelineno-3-177"></a>
+<a href="#__codelineno-3-178" id="__codelineno-3-178" name="__codelineno-3-178"></a>        <span class="k">return</span> <span class="p">{</span>
+<a href="#__codelineno-3-179" id="__codelineno-3-179" name="__codelineno-3-179"></a>            <span class="s2">"word_count"</span><span class="p">:</span> <span class="n">word_count</span><span class="p">,</span>
+<a href="#__codelineno-3-180" id="__codelineno-3-180" name="__codelineno-3-180"></a>            <span class="s2">"methodology_type"</span><span class="p">:</span> <span class="n">method_keywords</span><span class="p">,</span>
+<a href="#__codelineno-3-181" id="__codelineno-3-181" name="__codelineno-3-181"></a>            <span class="s2">"research_contribution"</span><span class="p">:</span> <span class="s2">"novel approach"</span><span class="p">,</span>  <span class="c1"># Simplified</span>
+<a href="#__codelineno-3-182" id="__codelineno-3-182" name="__codelineno-3-182"></a>            <span class="s2">"relevance_score"</span><span class="p">:</span> <span class="mf">0.8</span>
+<a href="#__codelineno-3-183" id="__codelineno-3-183" name="__codelineno-3-183"></a>        <span class="p">}</span>
+<a href="#__codelineno-3-184" id="__codelineno-3-184" name="__codelineno-3-184"></a>
+<a href="#__codelineno-3-185" id="__codelineno-3-185" name="__codelineno-3-185"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">extract_key_authors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">papers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<a href="#__codelineno-3-186" id="__codelineno-3-186" name="__codelineno-3-186"></a><span class="w">        </span><span class="sd">"""Extract frequently appearing authors"""</span>
+<a href="#__codelineno-3-187" id="__codelineno-3-187" name="__codelineno-3-187"></a>        <span class="n">author_count</span> <span class="o">=</span> <span class="p">{}</span>
+<a href="#__codelineno-3-188" id="__codelineno-3-188" name="__codelineno-3-188"></a>        <span class="k">for</span> <span class="n">paper</span> <span class="ow">in</span> <span class="n">papers</span><span class="p">:</span>
+<a href="#__codelineno-3-189" id="__codelineno-3-189" name="__codelineno-3-189"></a>            <span class="k">for</span> <span class="n">author</span> <span class="ow">in</span> <span class="n">paper</span><span class="p">[</span><span class="s2">"authors"</span><span class="p">]:</span>
+<a href="#__codelineno-3-190" id="__codelineno-3-190" name="__codelineno-3-190"></a>                <span class="n">author_count</span><span class="p">[</span><span class="n">author</span><span class="p">]</span> <span class="o">=</span> <span class="n">author_count</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">author</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<a href="#__codelineno-3-191" id="__codelineno-3-191" name="__codelineno-3-191"></a>
+<a href="#__codelineno-3-192" id="__codelineno-3-192" name="__codelineno-3-192"></a>        <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">author_count</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="n">author_count</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+<a href="#__codelineno-3-193" id="__codelineno-3-193" name="__codelineno-3-193"></a>
+<a href="#__codelineno-3-194" id="__codelineno-3-194" name="__codelineno-3-194"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">extract_venues</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">papers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<a href="#__codelineno-3-195" id="__codelineno-3-195" name="__codelineno-3-195"></a><span class="w">        </span><span class="sd">"""Extract publication venues"""</span>
+<a href="#__codelineno-3-196" id="__codelineno-3-196" name="__codelineno-3-196"></a>        <span class="n">venues</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<a href="#__codelineno-3-197" id="__codelineno-3-197" name="__codelineno-3-197"></a>        <span class="k">for</span> <span class="n">paper</span> <span class="ow">in</span> <span class="n">papers</span><span class="p">:</span>
+<a href="#__codelineno-3-198" id="__codelineno-3-198" name="__codelineno-3-198"></a>            <span class="n">venues</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">paper</span><span class="p">[</span><span class="s2">"venue"</span><span class="p">])</span>
+<a href="#__codelineno-3-199" id="__codelineno-3-199" name="__codelineno-3-199"></a>        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">venues</span><span class="p">)</span>
+<a href="#__codelineno-3-200" id="__codelineno-3-200" name="__codelineno-3-200"></a>
+<a href="#__codelineno-3-201" id="__codelineno-3-201" name="__codelineno-3-201"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_capabilities</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<a href="#__codelineno-3-202" id="__codelineno-3-202" name="__codelineno-3-202"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">capabilities</span>
+</code></pre></div></p>
+<h3 id="phase-4-integration-and-api-week-4-5">Phase 4: Integration and API (Week 4-5)</h3>
+<p><strong>FastAPI Backend</strong>:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">HTTPException</span><span class="p">,</span> <span class="n">BackgroundTasks</span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi.middleware.cors</span><span class="w"> </span><span class="kn">import</span> <span class="n">CORSMiddleware</span>
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+<a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span>
+<a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a>
+<a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Research Assistant API"</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s2">"1.0.0"</span><span class="p">)</span>
+<a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a>
+<a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="c1"># CORS middleware</span>
+<a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="n">app</span><span class="o">.</span><span class="n">add_middleware</span><span class="p">(</span>
+<a href="#__codelineno-4-12" id="__codelineno-4-12" name="__codelineno-4-12"></a>    <span class="n">CORSMiddleware</span><span class="p">,</span>
+<a href="#__codelineno-4-13" id="__codelineno-4-13" name="__codelineno-4-13"></a>    <span class="n">allow_origins</span><span class="o">=</span><span class="p">[</span><span class="s2">"*"</span><span class="p">],</span>
+<a href="#__codelineno-4-14" id="__codelineno-4-14" name="__codelineno-4-14"></a>    <span class="n">allow_credentials</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<a href="#__codelineno-4-15" id="__codelineno-4-15" name="__codelineno-4-15"></a>    <span class="n">allow_methods</span><span class="o">=</span><span class="p">[</span><span class="s2">"*"</span><span class="p">],</span>
+<a href="#__codelineno-4-16" id="__codelineno-4-16" name="__codelineno-4-16"></a>    <span class="n">allow_headers</span><span class="o">=</span><span class="p">[</span><span class="s2">"*"</span><span class="p">],</span>
+<a href="#__codelineno-4-17" id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="p">)</span>
+<a href="#__codelineno-4-18" id="__codelineno-4-18" name="__codelineno-4-18"></a>
+<a href="#__codelineno-4-19" id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="c1"># Pydantic models</span>
+<a href="#__codelineno-4-20" id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="k">class</span><span class="w"> </span><span class="nc">ResearchRequest</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<a href="#__codelineno-4-21" id="__codelineno-4-21" name="__codelineno-4-21"></a>    <span class="n">query</span><span class="p">:</span> <span class="nb">str</span>
+<a href="#__codelineno-4-22" id="__codelineno-4-22" name="__codelineno-4-22"></a>    <span class="n">depth</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"standard"</span>  <span class="c1"># "quick", "standard", "comprehensive"</span>
+<a href="#__codelineno-4-23" id="__codelineno-4-23" name="__codelineno-4-23"></a>    <span class="n">focus_areas</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
+<a href="#__codelineno-4-24" id="__codelineno-4-24" name="__codelineno-4-24"></a>    <span class="n">max_sources</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">20</span>
+<a href="#__codelineno-4-25" id="__codelineno-4-25" name="__codelineno-4-25"></a>
+<a href="#__codelineno-4-26" id="__codelineno-4-26" name="__codelineno-4-26"></a><span class="k">class</span><span class="w"> </span><span class="nc">ResearchResponse</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<a href="#__codelineno-4-27" id="__codelineno-4-27" name="__codelineno-4-27"></a>    <span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span>
+<a href="#__codelineno-4-28" id="__codelineno-4-28" name="__codelineno-4-28"></a>    <span class="n">status</span><span class="p">:</span> <span class="nb">str</span>
+<a href="#__codelineno-4-29" id="__codelineno-4-29" name="__codelineno-4-29"></a>    <span class="n">progress</span><span class="p">:</span> <span class="nb">float</span>
+<a href="#__codelineno-4-30" id="__codelineno-4-30" name="__codelineno-4-30"></a>    <span class="n">estimated_completion</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+<a href="#__codelineno-4-31" id="__codelineno-4-31" name="__codelineno-4-31"></a>    <span class="n">results</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
+<a href="#__codelineno-4-32" id="__codelineno-4-32" name="__codelineno-4-32"></a>
+<a href="#__codelineno-4-33" id="__codelineno-4-33" name="__codelineno-4-33"></a><span class="c1"># Global system components</span>
+<a href="#__codelineno-4-34" id="__codelineno-4-34" name="__codelineno-4-34"></a><span class="n">research_system</span> <span class="o">=</span> <span class="kc">None</span>
+<a href="#__codelineno-4-35" id="__codelineno-4-35" name="__codelineno-4-35"></a><span class="n">active_sessions</span> <span class="o">=</span> <span class="p">{}</span>
+<a href="#__codelineno-4-36" id="__codelineno-4-36" name="__codelineno-4-36"></a>
+<a href="#__codelineno-4-37" id="__codelineno-4-37" name="__codelineno-4-37"></a><span class="nd">@app</span><span class="o">.</span><span class="n">on_event</span><span class="p">(</span><span class="s2">"startup"</span><span class="p">)</span>
+<a href="#__codelineno-4-38" id="__codelineno-4-38" name="__codelineno-4-38"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">startup_event</span><span class="p">():</span>
+<a href="#__codelineno-4-39" id="__codelineno-4-39" name="__codelineno-4-39"></a><span class="w">    </span><span class="sd">"""Initialize research system on startup"""</span>
+<a href="#__codelineno-4-40" id="__codelineno-4-40" name="__codelineno-4-40"></a>    <span class="k">global</span> <span class="n">research_system</span>
+<a href="#__codelineno-4-41" id="__codelineno-4-41" name="__codelineno-4-41"></a>    <span class="n">research_system</span> <span class="o">=</span> <span class="k">await</span> <span class="n">initialize_research_system</span><span class="p">()</span>
+<a href="#__codelineno-4-42" id="__codelineno-4-42" name="__codelineno-4-42"></a>
+<a href="#__codelineno-4-43" id="__codelineno-4-43" name="__codelineno-4-43"></a><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">"/research"</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">ResearchResponse</span><span class="p">)</span>
+<a href="#__codelineno-4-44" id="__codelineno-4-44" name="__codelineno-4-44"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">start_research</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">ResearchRequest</span><span class="p">,</span> <span class="n">background_tasks</span><span class="p">:</span> <span class="n">BackgroundTasks</span><span class="p">):</span>
+<a href="#__codelineno-4-45" id="__codelineno-4-45" name="__codelineno-4-45"></a><span class="w">    </span><span class="sd">"""Start new research session"""</span>
+<a href="#__codelineno-4-46" id="__codelineno-4-46" name="__codelineno-4-46"></a>    <span class="n">session_id</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span>
+<a href="#__codelineno-4-47" id="__codelineno-4-47" name="__codelineno-4-47"></a>
+<a href="#__codelineno-4-48" id="__codelineno-4-48" name="__codelineno-4-48"></a>    <span class="c1"># Initialize session</span>
+<a href="#__codelineno-4-49" id="__codelineno-4-49" name="__codelineno-4-49"></a>    <span class="n">active_sessions</span><span class="p">[</span><span class="n">session_id</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<a href="#__codelineno-4-50" id="__codelineno-4-50" name="__codelineno-4-50"></a>        <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"started"</span><span class="p">,</span>
+<a href="#__codelineno-4-51" id="__codelineno-4-51" name="__codelineno-4-51"></a>        <span class="s2">"progress"</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+<a href="#__codelineno-4-52" id="__codelineno-4-52" name="__codelineno-4-52"></a>        <span class="s2">"request"</span><span class="p">:</span> <span class="n">request</span><span class="p">,</span>
+<a href="#__codelineno-4-53" id="__codelineno-4-53" name="__codelineno-4-53"></a>        <span class="s2">"results"</span><span class="p">:</span> <span class="kc">None</span>
+<a href="#__codelineno-4-54" id="__codelineno-4-54" name="__codelineno-4-54"></a>    <span class="p">}</span>
+<a href="#__codelineno-4-55" id="__codelineno-4-55" name="__codelineno-4-55"></a>
+<a href="#__codelineno-4-56" id="__codelineno-4-56" name="__codelineno-4-56"></a>    <span class="c1"># Start research in background</span>
+<a href="#__codelineno-4-57" id="__codelineno-4-57" name="__codelineno-4-57"></a>    <span class="n">background_tasks</span><span class="o">.</span><span class="n">add_task</span><span class="p">(</span><span class="n">execute_research</span><span class="p">,</span> <span class="n">session_id</span><span class="p">,</span> <span class="n">request</span><span class="p">)</span>
+<a href="#__codelineno-4-58" id="__codelineno-4-58" name="__codelineno-4-58"></a>
+<a href="#__codelineno-4-59" id="__codelineno-4-59" name="__codelineno-4-59"></a>    <span class="k">return</span> <span class="n">ResearchResponse</span><span class="p">(</span>
+<a href="#__codelineno-4-60" id="__codelineno-4-60" name="__codelineno-4-60"></a>        <span class="n">session_id</span><span class="o">=</span><span class="n">session_id</span><span class="p">,</span>
+<a href="#__codelineno-4-61" id="__codelineno-4-61" name="__codelineno-4-61"></a>        <span class="n">status</span><span class="o">=</span><span class="s2">"started"</span><span class="p">,</span>
+<a href="#__codelineno-4-62" id="__codelineno-4-62" name="__codelineno-4-62"></a>        <span class="n">progress</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+<a href="#__codelineno-4-63" id="__codelineno-4-63" name="__codelineno-4-63"></a>        <span class="n">estimated_completion</span><span class="o">=</span><span class="s2">"2-5 minutes"</span>
+<a href="#__codelineno-4-64" id="__codelineno-4-64" name="__codelineno-4-64"></a>    <span class="p">)</span>
+<a href="#__codelineno-4-65" id="__codelineno-4-65" name="__codelineno-4-65"></a>
+<a href="#__codelineno-4-66" id="__codelineno-4-66" name="__codelineno-4-66"></a><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"/research/</span><span class="si">{session_id}</span><span class="s2">"</span><span class="p">,</span> <span class="n">response_model</span><span class="o">=</span><span class="n">ResearchResponse</span><span class="p">)</span>
+<a href="#__codelineno-4-67" id="__codelineno-4-67" name="__codelineno-4-67"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_research_status</span><span class="p">(</span><span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<a href="#__codelineno-4-68" id="__codelineno-4-68" name="__codelineno-4-68"></a><span class="w">    </span><span class="sd">"""Get research session status"""</span>
+<a href="#__codelineno-4-69" id="__codelineno-4-69" name="__codelineno-4-69"></a>    <span class="k">if</span> <span class="n">session_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">active_sessions</span><span class="p">:</span>
+<a href="#__codelineno-4-70" id="__codelineno-4-70" name="__codelineno-4-70"></a>        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">"Session not found"</span><span class="p">)</span>
+<a href="#__codelineno-4-71" id="__codelineno-4-71" name="__codelineno-4-71"></a>
+<a href="#__codelineno-4-72" id="__codelineno-4-72" name="__codelineno-4-72"></a>    <span class="n">session</span> <span class="o">=</span> <span class="n">active_sessions</span><span class="p">[</span><span class="n">session_id</span><span class="p">]</span>
+<a href="#__codelineno-4-73" id="__codelineno-4-73" name="__codelineno-4-73"></a>    <span class="k">return</span> <span class="n">ResearchResponse</span><span class="p">(</span>
+<a href="#__codelineno-4-74" id="__codelineno-4-74" name="__codelineno-4-74"></a>        <span class="n">session_id</span><span class="o">=</span><span class="n">session_id</span><span class="p">,</span>
+<a href="#__codelineno-4-75" id="__codelineno-4-75" name="__codelineno-4-75"></a>        <span class="n">status</span><span class="o">=</span><span class="n">session</span><span class="p">[</span><span class="s2">"status"</span><span class="p">],</span>
+<a href="#__codelineno-4-76" id="__codelineno-4-76" name="__codelineno-4-76"></a>        <span class="n">progress</span><span class="o">=</span><span class="n">session</span><span class="p">[</span><span class="s2">"progress"</span><span class="p">],</span>
+<a href="#__codelineno-4-77" id="__codelineno-4-77" name="__codelineno-4-77"></a>        <span class="n">results</span><span class="o">=</span><span class="n">session</span><span class="p">[</span><span class="s2">"results"</span><span class="p">]</span>
+<a href="#__codelineno-4-78" id="__codelineno-4-78" name="__codelineno-4-78"></a>    <span class="p">)</span>
+<a href="#__codelineno-4-79" id="__codelineno-4-79" name="__codelineno-4-79"></a>
+<a href="#__codelineno-4-80" id="__codelineno-4-80" name="__codelineno-4-80"></a><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"/research/</span><span class="si">{session_id}</span><span class="s2">/report"</span><span class="p">)</span>
+<a href="#__codelineno-4-81" id="__codelineno-4-81" name="__codelineno-4-81"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">download_report</span><span class="p">(</span><span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">format</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"pdf"</span><span class="p">):</span>
+<a href="#__codelineno-4-82" id="__codelineno-4-82" name="__codelineno-4-82"></a><span class="w">    </span><span class="sd">"""Download research report"""</span>
+<a href="#__codelineno-4-83" id="__codelineno-4-83" name="__codelineno-4-83"></a>    <span class="k">if</span> <span class="n">session_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">active_sessions</span><span class="p">:</span>
+<a href="#__codelineno-4-84" id="__codelineno-4-84" name="__codelineno-4-84"></a>        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">"Session not found"</span><span class="p">)</span>
+<a href="#__codelineno-4-85" id="__codelineno-4-85" name="__codelineno-4-85"></a>
+<a href="#__codelineno-4-86" id="__codelineno-4-86" name="__codelineno-4-86"></a>    <span class="n">session</span> <span class="o">=</span> <span class="n">active_sessions</span><span class="p">[</span><span class="n">session_id</span><span class="p">]</span>
+<a href="#__codelineno-4-87" id="__codelineno-4-87" name="__codelineno-4-87"></a>    <span class="k">if</span> <span class="n">session</span><span class="p">[</span><span class="s2">"status"</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"completed"</span><span class="p">:</span>
+<a href="#__codelineno-4-88" id="__codelineno-4-88" name="__codelineno-4-88"></a>        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">"Research not completed"</span><span class="p">)</span>
+<a href="#__codelineno-4-89" id="__codelineno-4-89" name="__codelineno-4-89"></a>
+<a href="#__codelineno-4-90" id="__codelineno-4-90" name="__codelineno-4-90"></a>    <span class="c1"># Generate report in requested format</span>
+<a href="#__codelineno-4-91" id="__codelineno-4-91" name="__codelineno-4-91"></a>    <span class="n">report_content</span> <span class="o">=</span> <span class="n">generate_report</span><span class="p">(</span><span class="n">session</span><span class="p">[</span><span class="s2">"results"</span><span class="p">],</span> <span class="nb">format</span><span class="p">)</span>
+<a href="#__codelineno-4-92" id="__codelineno-4-92" name="__codelineno-4-92"></a>
+<a href="#__codelineno-4-93" id="__codelineno-4-93" name="__codelineno-4-93"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">"download_url"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"/downloads/</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="nb">format</span><span class="si">}</span><span class="s2">"</span><span class="p">}</span>
+<a href="#__codelineno-4-94" id="__codelineno-4-94" name="__codelineno-4-94"></a>
+<a href="#__codelineno-4-95" id="__codelineno-4-95" name="__codelineno-4-95"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">execute_research</span><span class="p">(</span><span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">request</span><span class="p">:</span> <span class="n">ResearchRequest</span><span class="p">):</span>
+<a href="#__codelineno-4-96" id="__codelineno-4-96" name="__codelineno-4-96"></a><span class="w">    </span><span class="sd">"""Execute research in background"""</span>
+<a href="#__codelineno-4-97" id="__codelineno-4-97" name="__codelineno-4-97"></a>    <span class="k">try</span><span class="p">:</span>
+<a href="#__codelineno-4-98" id="__codelineno-4-98" name="__codelineno-4-98"></a>        <span class="c1"># Update progress</span>
+<a href="#__codelineno-4-99" id="__codelineno-4-99" name="__codelineno-4-99"></a>        <span class="n">active_sessions</span><span class="p">[</span><span class="n">session_id</span><span class="p">][</span><span class="s2">"progress"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.1</span>
+<a href="#__codelineno-4-100" id="__codelineno-4-100" name="__codelineno-4-100"></a>        <span class="n">active_sessions</span><span class="p">[</span><span class="n">session_id</span><span class="p">][</span><span class="s2">"status"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"analyzing_query"</span>
+<a href="#__codelineno-4-101" id="__codelineno-4-101" name="__codelineno-4-101"></a>
+<a href="#__codelineno-4-102" id="__codelineno-4-102" name="__codelineno-4-102"></a>        <span class="c1"># Process with research coordinator</span>
+<a href="#__codelineno-4-103" id="__codelineno-4-103" name="__codelineno-4-103"></a>        <span class="n">message</span> <span class="o">=</span> <span class="p">{</span>
+<a href="#__codelineno-4-104" id="__codelineno-4-104" name="__codelineno-4-104"></a>            <span class="s2">"query"</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">query</span><span class="p">,</span>
+<a href="#__codelineno-4-105" id="__codelineno-4-105" name="__codelineno-4-105"></a>            <span class="s2">"session_id"</span><span class="p">:</span> <span class="n">session_id</span><span class="p">,</span>
+<a href="#__codelineno-4-106" id="__codelineno-4-106" name="__codelineno-4-106"></a>            <span class="s2">"depth"</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">depth</span><span class="p">,</span>
+<a href="#__codelineno-4-107" id="__codelineno-4-107" name="__codelineno-4-107"></a>            <span class="s2">"focus_areas"</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">focus_areas</span>
+<a href="#__codelineno-4-108" id="__codelineno-4-108" name="__codelineno-4-108"></a>        <span class="p">}</span>
+<a href="#__codelineno-4-109" id="__codelineno-4-109" name="__codelineno-4-109"></a>
+<a href="#__codelineno-4-110" id="__codelineno-4-110" name="__codelineno-4-110"></a>        <span class="c1"># Simulate progress updates</span>
+<a href="#__codelineno-4-111" id="__codelineno-4-111" name="__codelineno-4-111"></a>        <span class="k">for</span> <span class="n">progress</span> <span class="ow">in</span> <span class="p">[</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">]:</span>
+<a href="#__codelineno-4-112" id="__codelineno-4-112" name="__codelineno-4-112"></a>            <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<a href="#__codelineno-4-113" id="__codelineno-4-113" name="__codelineno-4-113"></a>            <span class="n">active_sessions</span><span class="p">[</span><span class="n">session_id</span><span class="p">][</span><span class="s2">"progress"</span><span class="p">]</span> <span class="o">=</span> <span class="n">progress</span>
+<a href="#__codelineno-4-114" id="__codelineno-4-114" name="__codelineno-4-114"></a>
+<a href="#__codelineno-4-115" id="__codelineno-4-115" name="__codelineno-4-115"></a>        <span class="c1"># Get results from coordinator</span>
+<a href="#__codelineno-4-116" id="__codelineno-4-116" name="__codelineno-4-116"></a>        <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">research_system</span><span class="o">.</span><span class="n">process_message</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<a href="#__codelineno-4-117" id="__codelineno-4-117" name="__codelineno-4-117"></a>
+<a href="#__codelineno-4-118" id="__codelineno-4-118" name="__codelineno-4-118"></a>        <span class="c1"># Update session with results</span>
+<a href="#__codelineno-4-119" id="__codelineno-4-119" name="__codelineno-4-119"></a>        <span class="n">active_sessions</span><span class="p">[</span><span class="n">session_id</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+<a href="#__codelineno-4-120" id="__codelineno-4-120" name="__codelineno-4-120"></a>            <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"completed"</span><span class="p">,</span>
+<a href="#__codelineno-4-121" id="__codelineno-4-121" name="__codelineno-4-121"></a>            <span class="s2">"progress"</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
+<a href="#__codelineno-4-122" id="__codelineno-4-122" name="__codelineno-4-122"></a>            <span class="s2">"results"</span><span class="p">:</span> <span class="n">results</span>
+<a href="#__codelineno-4-123" id="__codelineno-4-123" name="__codelineno-4-123"></a>        <span class="p">})</span>
+<a href="#__codelineno-4-124" id="__codelineno-4-124" name="__codelineno-4-124"></a>
+<a href="#__codelineno-4-125" id="__codelineno-4-125" name="__codelineno-4-125"></a>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a href="#__codelineno-4-126" id="__codelineno-4-126" name="__codelineno-4-126"></a>        <span class="n">active_sessions</span><span class="p">[</span><span class="n">session_id</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+<a href="#__codelineno-4-127" id="__codelineno-4-127" name="__codelineno-4-127"></a>            <span class="s2">"status"</span><span class="p">:</span> <span class="s2">"failed"</span><span class="p">,</span>
+<a href="#__codelineno-4-128" id="__codelineno-4-128" name="__codelineno-4-128"></a>            <span class="s2">"progress"</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
+<a href="#__codelineno-4-129" id="__codelineno-4-129" name="__codelineno-4-129"></a>            <span class="s2">"error"</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<a href="#__codelineno-4-130" id="__codelineno-4-130" name="__codelineno-4-130"></a>        <span class="p">})</span>
+<a href="#__codelineno-4-131" id="__codelineno-4-131" name="__codelineno-4-131"></a>
+<a href="#__codelineno-4-132" id="__codelineno-4-132" name="__codelineno-4-132"></a><span class="k">def</span><span class="w"> </span><span class="nf">generate_report</span><span class="p">(</span><span class="n">results</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="nb">format</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<a href="#__codelineno-4-133" id="__codelineno-4-133" name="__codelineno-4-133"></a><span class="w">    </span><span class="sd">"""Generate research report in specified format"""</span>
+<a href="#__codelineno-4-134" id="__codelineno-4-134" name="__codelineno-4-134"></a>    <span class="c1"># Implement report generation logic</span>
+<a href="#__codelineno-4-135" id="__codelineno-4-135" name="__codelineno-4-135"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">"Generated </span><span class="si">{</span><span class="nb">format</span><span class="si">}</span><span class="s2"> report"</span>
+<a href="#__codelineno-4-136" id="__codelineno-4-136" name="__codelineno-4-136"></a>
+<a href="#__codelineno-4-137" id="__codelineno-4-137" name="__codelineno-4-137"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+<a href="#__codelineno-4-138" id="__codelineno-4-138" name="__codelineno-4-138"></a>    <span class="kn">import</span><span class="w"> </span><span class="nn">uvicorn</span>
+<a href="#__codelineno-4-139" id="__codelineno-4-139" name="__codelineno-4-139"></a>    <span class="n">uvicorn</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s2">"0.0.0.0"</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">)</span>
+</code></pre></div></p>
+<h2 id="success-criteria">✅ Success Criteria</h2>
+<h3 id="technical-metrics">Technical Metrics</h3>
+<ul>
+<li><strong>Response Time</strong>: &lt; 5 minutes for standard queries</li>
+<li><strong>Accuracy</strong>: &gt; 85% factual accuracy in reports</li>
+<li><strong>Source Coverage</strong>: Minimum 10 diverse sources per query</li>
+<li><strong>Uptime</strong>: &gt; 99% system availability</li>
+<li><strong>Scalability</strong>: Handle 10+ concurrent sessions</li>
+</ul>
+<h3 id="quality-metrics">Quality Metrics</h3>
+<ul>
+<li><strong>Comprehensiveness</strong>: Reports cover all major aspects</li>
+<li><strong>Citation Quality</strong>: Proper attribution and source links</li>
+<li><strong>Readability</strong>: Clear, well-structured output</li>
+<li><strong>Relevance</strong>: Information directly addresses query</li>
+<li><strong>Objectivity</strong>: Balanced perspective on controversial topics</li>
+</ul>
+<h3 id="user-experience">User Experience</h3>
+<ul>
+<li><strong>Intuitive Interface</strong>: Easy query input and result navigation</li>
+<li><strong>Progress Tracking</strong>: Real-time status updates</li>
+<li><strong>Export Options</strong>: Multiple format support (PDF, HTML, etc.)</li>
+<li><strong>Session Management</strong>: Save and resume research sessions</li>
+<li><strong>Customization</strong>: Adjustable depth and focus areas</li>
+</ul>
+<hr/>
+<p><em>This capstone project demonstrates mastery of LLM and multi-agent system concepts through a practical, real-world application that showcases advanced AI coordination, reasoning, and report generation capabilities.</em></p>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2024 LLM-MCP Learning Path Contributors
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

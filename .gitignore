@@ -11,7 +11,7 @@ env.bak/
 venv.bak/
 
 # MkDocs
-site/
+
 .mkdocs_build/
 
 # IDEs
