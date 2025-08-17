@@ -47,6 +47,7 @@ graph LR
 ```
 
 **Key Components**:
+
 - **Data**: The fuel that drives machine learning
 - **Features**: Measurable properties of observed phenomena
 - **Model**: Mathematical representation of a real-world process

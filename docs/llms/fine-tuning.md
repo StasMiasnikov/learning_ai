@@ -20,7 +20,9 @@ graph TD
 ```
 
 **Full Fine-tuning**: Update all model parameters
+
 **Parameter-Efficient**: Update only a subset of parameters
+
 **In-Context Learning**: No parameter updates, only prompting
 
 ### When to Fine-tune vs. Prompt Engineering

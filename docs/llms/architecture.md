@@ -7,12 +7,14 @@ Large Language Models are built on the Transformer architecture, which revolutio
 ### From RNNs to Transformers
 
 **Problems with RNNs for Language Modeling**:
+
 - Sequential processing limits parallelization
 - Vanishing gradients in long sequences
 - Difficulty capturing long-range dependencies
 - Limited scalability to very large datasets
 
 **The Transformer Solution**:
+
 - Parallel processing of all sequence positions
 - Direct connections between any two positions
 - Scalable to massive datasets and model sizes
