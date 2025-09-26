@@ -1,0 +1,1280 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="A comprehensive learning module for understanding, building, securing, and measuring Large Language Model agents and Multi-Agent Collaboration Platforms" name="description"/>
+<meta content="Learning Path Contributors" name="author"/>
+<link href="https://example.com/docs/mcp-llm-connectivity/multi-agent/" rel="canonical"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.20" name="generator"/>
+<title>Multi-Agent System with MCP - LLM and Multi-Agent Collaboration Platforms - Learning Path</title>
+<link href="../../../assets/stylesheets/main.e53b48f4.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#multi-agent-system-with-mcp">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="LLM and Multi-Agent Collaboration Platforms - Learning Path" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="LLM and Multi-Agent Collaboration Platforms - Learning Path">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            LLM and Multi-Agent Collaboration Platforms - Learning Path
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Multi-Agent System with MCP
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/example/llm-mcp-learning-path" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    LLM-MCP-Learning-Path
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../index.md">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../introduction/overview.md">
+          
+  
+  
+  Introduction
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../foundations/ai-ml-fundamentals.md">
+          
+  
+  
+  Foundational Knowledge
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../llms/architecture.md">
+          
+  
+  
+  Understanding LLMs
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../agents/architecture.md">
+          
+  
+  
+  Building LLM Agents
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../security/fundamentals.md">
+          
+  
+  
+  Security &amp; Safety
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../performance/metrics.md">
+          
+  
+  
+  Performance Measurement
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../mcp/fundamentals.md">
+          
+  
+  
+  Multi-Agent Platforms
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../mcp-llm-connectivity/index.md">
+          
+  
+  
+  MCP-LLM Connectivity Patterns
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../resources/learning.md">
+          
+  
+  
+  Resources
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../capstone/overview.md">
+          
+  
+  
+  Capstone Project
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="LLM and Multi-Agent Collaboration Platforms - Learning Path" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="LLM and Multi-Agent Collaboration Platforms - Learning Path">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    LLM and Multi-Agent Collaboration Platforms - Learning Path
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/example/llm-mcp-learning-path" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    LLM-MCP-Learning-Path
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../index.md">
+<span class="md-ellipsis">
+    Home
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../introduction/overview.md">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../introduction/applications.md">
+<span class="md-ellipsis">
+    Applications
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../introduction/prerequisites.md">
+<span class="md-ellipsis">
+    Prerequisites
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Foundational Knowledge
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Foundational Knowledge
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../foundations/ai-ml-fundamentals.md">
+<span class="md-ellipsis">
+    AI/ML Fundamentals
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../foundations/mathematics.md">
+<span class="md-ellipsis">
+    Mathematics for AI
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../foundations/programming.md">
+<span class="md-ellipsis">
+    Programming Essentials
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../foundations/deep-learning.md">
+<span class="md-ellipsis">
+    Deep Learning Basics
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Understanding LLMs
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Understanding LLMs
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../llms/architecture.md">
+<span class="md-ellipsis">
+    LLM Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../llms/training.md">
+<span class="md-ellipsis">
+    Training Process
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../llms/fine-tuning.md">
+<span class="md-ellipsis">
+    Fine-tuning &amp; Adaptation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../llms/prompt-engineering.md">
+<span class="md-ellipsis">
+    Prompt Engineering
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../llms/evaluation.md">
+<span class="md-ellipsis">
+    Model Evaluation
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Building LLM Agents
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Building LLM Agents
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../agents/architecture.md">
+<span class="md-ellipsis">
+    Agent Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../agents/planning.md">
+<span class="md-ellipsis">
+    Planning &amp; Reasoning
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../agents/tools.md">
+<span class="md-ellipsis">
+    Tool Integration
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../agents/memory.md">
+<span class="md-ellipsis">
+    Memory Systems
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../agents/deployment.md">
+<span class="md-ellipsis">
+    Deployment Strategies
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Security &amp; Safety
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            Security &amp; Safety
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../security/fundamentals.md">
+<span class="md-ellipsis">
+    Security Fundamentals
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../security/vulnerabilities.md">
+<span class="md-ellipsis">
+    Common Vulnerabilities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../security/alignment.md">
+<span class="md-ellipsis">
+    Safety Alignment
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../security/monitoring.md">
+<span class="md-ellipsis">
+    Monitoring &amp; Detection
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Performance Measurement
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            Performance Measurement
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../performance/metrics.md">
+<span class="md-ellipsis">
+    Evaluation Metrics
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../performance/benchmarking.md">
+<span class="md-ellipsis">
+    Benchmarking
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../performance/monitoring.md">
+<span class="md-ellipsis">
+    Monitoring Systems
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../performance/optimization.md">
+<span class="md-ellipsis">
+    Optimization Techniques
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<span class="md-ellipsis">
+    Multi-Agent Platforms
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            Multi-Agent Platforms
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp/fundamentals.md">
+<span class="md-ellipsis">
+    MCP Fundamentals
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp/communication.md">
+<span class="md-ellipsis">
+    Agent Communication
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp/coordination.md">
+<span class="md-ellipsis">
+    Coordination Strategies
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp/frameworks.md">
+<span class="md-ellipsis">
+    Frameworks &amp; Tools
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp/scaling.md">
+<span class="md-ellipsis">
+    Scaling Considerations
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+<span class="md-ellipsis">
+    MCP-LLM Connectivity Patterns
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            MCP-LLM Connectivity Patterns
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp-llm-connectivity/index.md">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp-llm-connectivity/basic-flow.md">
+<span class="md-ellipsis">
+    Basic Communication Flow
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp-llm-connectivity/tool-integration.md">
+<span class="md-ellipsis">
+    Tool Integration
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp-llm-connectivity/multi-agent.md">
+<span class="md-ellipsis">
+    Multi-Agent Systems
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp-llm-connectivity/enterprise-architecture.md">
+<span class="md-ellipsis">
+    Enterprise Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp-llm-connectivity/real-time-streaming.md">
+<span class="md-ellipsis">
+    Real-Time Streaming
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp-llm-connectivity/security-patterns.md">
+<span class="md-ellipsis">
+    Security Patterns
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp-llm-connectivity/scaling-patterns.md">
+<span class="md-ellipsis">
+    Scaling Patterns
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../mcp-llm-connectivity/data-flow.md">
+<span class="md-ellipsis">
+    Data Flow Patterns
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+<span class="md-ellipsis">
+    Resources
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../resources/learning.md">
+<span class="md-ellipsis">
+    Learning Resources
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../resources/tools.md">
+<span class="md-ellipsis">
+    Tools &amp; Libraries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../resources/communities.md">
+<span class="md-ellipsis">
+    Communities
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../resources/updates.md">
+<span class="md-ellipsis">
+    Staying Updated
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+<span class="md-ellipsis">
+    Capstone Project
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+            Capstone Project
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../capstone/overview.md">
+<span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../capstone/planning.md">
+<span class="md-ellipsis">
+    Planning Phase
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../capstone/implementation.md">
+<span class="md-ellipsis">
+    Implementation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../capstone/evaluation.md">
+<span class="md-ellipsis">
+    Evaluation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../capstone/documentation.md">
+<span class="md-ellipsis">
+    Documentation
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use-case-intelligent-software-development-assistant">
+<span class="md-ellipsis">
+      Use Case: Intelligent Software Development Assistant
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#architecture-diagram">
+<span class="md-ellipsis">
+      Architecture Diagram
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#agent-collaboration-workflow">
+<span class="md-ellipsis">
+      Agent Collaboration Workflow
+    </span>
+</a>
+<nav aria-label="Agent Collaboration Workflow" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pull-request-review-process">
+<span class="md-ellipsis">
+      Pull Request Review Process
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#automated-code-improvement-workflow">
+<span class="md-ellipsis">
+      Automated Code Improvement Workflow
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#specialized-agent-capabilities">
+<span class="md-ellipsis">
+      Specialized Agent Capabilities
+    </span>
+</a>
+<nav aria-label="Specialized Agent Capabilities" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-code-analysis-agent">
+<span class="md-ellipsis">
+      1. Code Analysis Agent
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-security-agent">
+<span class="md-ellipsis">
+      2. Security Agent
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-performance-agent">
+<span class="md-ellipsis">
+      3. Performance Agent
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inter-agent-communication-patterns">
+<span class="md-ellipsis">
+      Inter-Agent Communication Patterns
+    </span>
+</a>
+<nav aria-label="Inter-Agent Communication Patterns" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#message-passing">
+<span class="md-ellipsis">
+      Message Passing
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#shared-context-management">
+<span class="md-ellipsis">
+      Shared Context Management
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#benefits-of-multi-agent-architecture">
+<span class="md-ellipsis">
+      Benefits of Multi-Agent Architecture
+    </span>
+</a>
+<nav aria-label="Benefits of Multi-Agent Architecture" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#specialization-advantages">
+<span class="md-ellipsis">
+      Specialization Advantages
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#collaboration-benefits">
+<span class="md-ellipsis">
+      Collaboration Benefits
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-patterns">
+<span class="md-ellipsis">
+      Implementation Patterns
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="multi-agent-system-with-mcp">Multi-Agent System with MCP</h1>
+<p>This diagram illustrates how multiple AI agents collaborate through MCP to handle complex, multi-domain tasks requiring specialized expertise.</p>
+<h2 id="use-case-intelligent-software-development-assistant">Use Case: Intelligent Software Development Assistant</h2>
+<p>A system of specialized AI agents that collaborate to analyze code, review pull requests, suggest improvements, and coordinate development workflows.</p>
+<h2 id="architecture-diagram">Architecture Diagram</h2>
+<pre class="mermaid"><code>graph TB
+    subgraph "User Interface"
+        DEV[Developer IDE]
+        WEB[Web Dashboard]
+        CLI[CLI Tool]
+        BOT[GitHub Bot]
+    end
+
+    subgraph "Agent Orchestrator"
+        ORCH[Orchestrator Agent&lt;br/&gt;Task Distribution]
+        WF[Workflow Manager&lt;br/&gt;State Machine]
+        PQ[Priority Queue&lt;br/&gt;Task Scheduling]
+    end
+
+    subgraph "Specialized Agents"
+        CODE[Code Analysis Agent&lt;br/&gt;AST Parsing &amp; Review]
+        SEC[Security Agent&lt;br/&gt;Vulnerability Scanning]
+        PERF[Performance Agent&lt;br/&gt;Optimization Analysis]
+        DOC[Documentation Agent&lt;br/&gt;Auto Documentation]
+        TEST[Testing Agent&lt;br/&gt;Test Generation]
+        ARCH[Architecture Agent&lt;br/&gt;Design Patterns]
+    end
+
+    subgraph "MCP Protocol Layer"
+        MCP1[MCP Server 1&lt;br/&gt;Code Tools]
+        MCP2[MCP Server 2&lt;br/&gt;Security Tools]
+        MCP3[MCP Server 3&lt;br/&gt;Performance Tools]
+        MCP4[MCP Server 4&lt;br/&gt;Documentation Tools]
+        MCP5[MCP Server 5&lt;br/&gt;Testing Tools]
+        MCP6[MCP Server 6&lt;br/&gt;Architecture Tools]
+    end
+
+    subgraph "Development Tools"
+        GIT[Git Repository&lt;br/&gt;Version Control]
+        CI[CI/CD Pipeline&lt;br/&gt;Jenkins/GitHub Actions]
+        SONAR[SonarQube&lt;br/&gt;Code Quality]
+        JIRA[Issue Tracking&lt;br/&gt;Jira/Linear]
+    end
+
+    subgraph "Knowledge Base"
+        KB[(Knowledge Base&lt;br/&gt;Best Practices)]
+        VDB[(Vector Database&lt;br/&gt;Code Embeddings)]
+        DOCS[(Documentation&lt;br/&gt;Wiki/Confluence)]
+    end
+
+    DEV --&gt; ORCH
+    WEB --&gt; ORCH
+    CLI --&gt; ORCH
+    BOT --&gt; ORCH
+
+    ORCH --&gt; WF
+    ORCH --&gt; PQ
+
+    ORCH &lt;--&gt; CODE
+    ORCH &lt;--&gt; SEC
+    ORCH &lt;--&gt; PERF
+    ORCH &lt;--&gt; DOC
+    ORCH &lt;--&gt; TEST
+    ORCH &lt;--&gt; ARCH
+
+    CODE &lt;--&gt; MCP1
+    SEC &lt;--&gt; MCP2
+    PERF &lt;--&gt; MCP3
+    DOC &lt;--&gt; MCP4
+    TEST &lt;--&gt; MCP5
+    ARCH &lt;--&gt; MCP6
+
+    MCP1 --&gt; GIT
+    MCP1 --&gt; CI
+    MCP2 --&gt; SONAR
+    MCP3 --&gt; CI
+    MCP4 --&gt; DOCS
+    MCP5 --&gt; CI
+    MCP6 --&gt; KB
+
+    CODE --&gt; VDB
+    ARCH --&gt; KB
+    DOC --&gt; DOCS
+
+    style ORCH fill:#e1f5fe
+    style CODE fill:#f3e5f5
+    style SEC fill:#ffebee
+    style PERF fill:#e8f5e8
+    style DOC fill:#fff3e0
+    style TEST fill:#f1f8e9
+    style ARCH fill:#fce4ec</code></pre>
+<h2 id="agent-collaboration-workflow">Agent Collaboration Workflow</h2>
+<h3 id="pull-request-review-process">Pull Request Review Process</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant DEV as Developer
+    participant ORCH as Orchestrator
+    participant CODE as Code Agent
+    participant SEC as Security Agent
+    participant PERF as Performance Agent
+    participant TEST as Testing Agent
+    participant MCP as MCP Servers
+
+    DEV-&gt;&gt;ORCH: Submit PR for review
+
+    Note over ORCH: Analyze PR scope&lt;br/&gt;and assign agents
+
+    par Parallel Analysis
+        ORCH-&gt;&gt;CODE: Analyze code changes
+        CODE-&gt;&gt;MCP: Use AST parsing tools
+        and
+        ORCH-&gt;&gt;SEC: Security vulnerability scan
+        SEC-&gt;&gt;MCP: Use security scanning tools
+        and
+        ORCH-&gt;&gt;PERF: Performance impact analysis
+        PERF-&gt;&gt;MCP: Use profiling tools
+        and
+        ORCH-&gt;&gt;TEST: Test coverage analysis
+        TEST-&gt;&gt;MCP: Use testing frameworks
+    end
+
+    MCP--&gt;&gt;CODE: AST analysis results
+    MCP--&gt;&gt;SEC: Security scan results
+    MCP--&gt;&gt;PERF: Performance metrics
+    MCP--&gt;&gt;TEST: Coverage report
+
+    CODE--&gt;&gt;ORCH: Code quality score: 8.5/10
+    SEC--&gt;&gt;ORCH: No vulnerabilities found
+    PERF--&gt;&gt;ORCH: Minor performance concern in function X
+    TEST--&gt;&gt;ORCH: Coverage decreased by 2%
+
+    Note over ORCH: Aggregate results&lt;br/&gt;and generate report
+
+    ORCH--&gt;&gt;DEV: Comprehensive review report with&lt;br/&gt;suggestions and required changes</code></pre>
+<h3 id="automated-code-improvement-workflow">Automated Code Improvement Workflow</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant ORCH as Orchestrator
+    participant CODE as Code Agent
+    participant PERF as Performance Agent
+    participant DOC as Documentation Agent
+    participant TEST as Testing Agent
+    participant GIT as Git Repository
+
+    ORCH-&gt;&gt;CODE: Identify improvement opportunities
+    CODE-&gt;&gt;ORCH: Found: redundant loops in service layer
+
+    ORCH-&gt;&gt;PERF: Analyze performance impact
+    PERF-&gt;&gt;ORCH: 40% performance gain possible
+
+    ORCH-&gt;&gt;CODE: Generate optimized code
+    CODE-&gt;&gt;ORCH: Refactored code with optimizations
+
+    ORCH-&gt;&gt;TEST: Generate tests for new code
+    TEST-&gt;&gt;ORCH: Unit tests with 95% coverage
+
+    ORCH-&gt;&gt;DOC: Update documentation
+    DOC-&gt;&gt;ORCH: Updated API docs and comments
+
+    Note over ORCH: Create improvement branch&lt;br/&gt;with all changes
+
+    ORCH-&gt;&gt;GIT: Commit optimized code + tests + docs
+    GIT--&gt;&gt;ORCH: Branch created: feature/auto-optimization-123
+
+    ORCH--&gt;&gt;ORCH: Create PR for human review</code></pre>
+<h2 id="specialized-agent-capabilities">Specialized Agent Capabilities</h2>
+<h3 id="1-code-analysis-agent">1. Code Analysis Agent</h3>
+<pre class="mermaid"><code>mindmap
+  root((Code Agent))
+    Syntax Analysis
+      AST Parsing
+      Syntax Validation
+      Code Formatting
+    Quality Metrics
+      Complexity Analysis
+      Code Smells Detection
+      Maintainability Index
+    Best Practices
+      Design Patterns
+      SOLID Principles
+      Coding Standards
+    Refactoring
+      Code Suggestions
+      Automated Fixes
+      Legacy Modernization</code></pre>
+<h3 id="2-security-agent">2. Security Agent</h3>
+<pre class="mermaid"><code>mindmap
+  root((Security Agent))
+    Vulnerability Scanning
+      OWASP Top 10
+      CVE Database
+      Static Analysis
+    Dependency Check
+      Known Vulnerabilities
+      License Compliance
+      Version Updates
+    Secure Coding
+      Input Validation
+      Output Encoding
+      Authentication
+    Compliance
+      GDPR
+      SOX
+      HIPAA</code></pre>
+<h3 id="3-performance-agent">3. Performance Agent</h3>
+<pre class="mermaid"><code>mindmap
+  root((Performance Agent))
+    Profiling
+      CPU Usage
+      Memory Allocation
+      I/O Operations
+    Optimization
+      Algorithm Efficiency
+      Database Queries
+      Caching Strategies
+    Monitoring
+      Response Times
+      Throughput
+      Resource Usage
+    Recommendations
+      Code Optimization
+      Infrastructure Scaling
+      Architecture Changes</code></pre>
+<h2 id="inter-agent-communication-patterns">Inter-Agent Communication Patterns</h2>
+<h3 id="message-passing">Message Passing</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant A1 as Agent 1
+    participant ORCH as Orchestrator
+    participant A2 as Agent 2
+    participant A3 as Agent 3
+
+    A1-&gt;&gt;ORCH: Task completed: code_analysis
+    Note over ORCH: Route to dependent agents
+
+    par Notify Dependents
+        ORCH-&gt;&gt;A2: Input available: analysis_results
+        ORCH-&gt;&gt;A3: Input available: analysis_results
+    end
+
+    A2-&gt;&gt;ORCH: Task completed: security_scan
+    A3-&gt;&gt;ORCH: Task completed: performance_analysis
+
+    Note over ORCH: All dependencies satisfied&lt;br/&gt;proceed to next stage</code></pre>
+<h3 id="shared-context-management">Shared Context Management</h3>
+<pre class="mermaid"><code>graph LR
+    subgraph "Shared Context Store"
+        CTX[Context Manager]
+        SESS[Session State]
+        HIST[Task History]
+        MEM[Working Memory]
+    end
+
+    A1[Agent 1] &lt;--&gt; CTX
+    A2[Agent 2] &lt;--&gt; CTX
+    A3[Agent 3] &lt;--&gt; CTX
+    A4[Agent 4] &lt;--&gt; CTX
+
+    CTX --&gt; SESS
+    CTX --&gt; HIST
+    CTX --&gt; MEM</code></pre>
+<h2 id="benefits-of-multi-agent-architecture">Benefits of Multi-Agent Architecture</h2>
+<h3 id="specialization-advantages">Specialization Advantages</h3>
+<ul>
+<li><strong>Domain Expertise</strong>: Each agent focuses on specific technical areas</li>
+<li><strong>Parallel Processing</strong>: Multiple agents work simultaneously</li>
+<li><strong>Scalable</strong>: Add new agents without modifying existing ones</li>
+<li><strong>Maintainable</strong>: Clear separation of responsibilities</li>
+</ul>
+<h3 id="collaboration-benefits">Collaboration Benefits</h3>
+<ul>
+<li><strong>Comprehensive Analysis</strong>: Multiple perspectives on the same code</li>
+<li><strong>Cross-Domain Insights</strong>: Security implications of performance optimizations</li>
+<li><strong>Quality Assurance</strong>: Multiple verification layers</li>
+<li><strong>Knowledge Sharing</strong>: Agents learn from each other's findings</li>
+</ul>
+<h3 id="implementation-patterns">Implementation Patterns</h3>
+<ul>
+<li><strong>Event-Driven</strong>: Agents respond to code change events</li>
+<li><strong>Pipeline</strong>: Sequential processing with handoffs</li>
+<li><strong>Ensemble</strong>: Multiple agents vote on decisions</li>
+<li><strong>Hierarchical</strong>: Supervisor agents manage worker agents</li>
+</ul>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2024 LLM-MCP Learning Path Contributors
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
